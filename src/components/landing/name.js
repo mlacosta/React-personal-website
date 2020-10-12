@@ -1,4 +1,5 @@
 import React from 'react';
+import Typist from 'react-typist';
 import './name.css'
 
 const myName = 'Mariano L. Acosta';
@@ -19,10 +20,20 @@ class Name extends React.Component{
 
         return(
             <div className='Name' >
-                <h1 id='myName' style={nameStyle} >{myName}</h1>
+                <h1 id='myName' style={nameStyle}><Typist cursor={{show:false}}>{myName}</Typist></h1>
                 <div id="profession">
-                    <h2 style={titleStyle} >{firstTitle}</h2>
-                    <h2 style={titleStyle} >{secondTitle}</h2>
+                    <h2 style={titleStyle}>
+                        <Typist cursor={{show:false}}>
+                            <Typist.Delay ms={1300} />
+                            {firstTitle}
+                        </Typist >
+                    </h2>
+                    <h2 style={titleStyle}>
+                        <Typist cursor={{show:false}}>
+                            <Typist.Delay ms={2500} />
+                            {secondTitle}
+                        </Typist>
+                    </h2>
                 </div>
             </div>
         );
