@@ -1,0 +1,8 @@
+.Name {
+    text-align: left;
+}
+
+.Name .profession{
+    line-height: 7px;
+    font-weight: 100;
+}

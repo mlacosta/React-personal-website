@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Name from './components/landing/name';
+
+let colorPalette = {
+  text01:'#f6ecc8',
+  text02: '#7fa1ce',
+  text03: '#4d6e9b',
+  background: '#050409',
+  boxBackground: '060608',
+  border: '#050409',
+  white: '#ffff'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Name colorPalette = {colorPalette}></Name>
     </div>
   );
 }
