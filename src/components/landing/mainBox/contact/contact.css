@@ -1,0 +1,15 @@
+.Contact{
+    position:absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+.Contact a{
+    font-size: 1.3rem;
+    margin: 0 60px;
+    text-decoration: none;
+}
+
+.Contact a:hover{
+    filter: brightness(200%) saturate(140%);   
+}

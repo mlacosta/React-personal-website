@@ -1,0 +1,16 @@
+#version{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 10px 20px;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+#version a{
+    text-decoration: none;
+}
+
+#version a:hover{
+    filter: brightness(200%) saturate(140%);   
+}
