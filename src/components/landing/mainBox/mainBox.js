@@ -2,6 +2,7 @@ import React from 'react';
 import Name from './name/name';
 import Contact from '../mainBox/contact/contact';
 import Version from './version/version';
+import ProfilePic from '../../profilePic/profilePic';
 import './mainBox.css'
 
 
@@ -11,7 +12,7 @@ class MainBox extends React.Component{
         
         let color = this.props.colorPalette;
         let style = {
-            border: `3px solid ${color.border}`,
+            border: `1px solid ${color.border}`,
             width: '80%',
             maxWidth: '1300px',
             height: '700px',
@@ -26,6 +27,7 @@ class MainBox extends React.Component{
                 <span id='cursor'>{'>'}</span>    
                 <Name colorPalette = {this.props.colorPalette}/>
                 <Contact links={contact} colorPalette = {this.props.colorPalette}></Contact>
+                {/*<ProfilePic height='200px' top='340px' right = '290px'></ProfilePic>*/}
                 <Version colorPalette = {this.props.colorPalette} link={contact}/>
             </div>
 
