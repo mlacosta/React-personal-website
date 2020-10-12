@@ -1,8 +1,12 @@
 .Name {
     text-align: left;
+    font-size: 1.5rem;
+}
+#myName {
+    font-weight: 300;
 }
 
-.Name .profession{
-    line-height: 7px;
-    font-weight: 100;
+#profession{
+    line-height: 14px;
+    font-size: 1.2rem;
 }

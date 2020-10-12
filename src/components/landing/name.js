@@ -1,5 +1,5 @@
 import React from 'react';
-import name from './name.css'
+import './name.css'
 
 const myName = 'Mariano L. Acosta';
 const firstTitle = 'Software Developer';
@@ -13,13 +13,14 @@ class Name extends React.Component{
             color: colors.text01
         }
         let titleStyle = {
-            color: colors.text02
+            color: colors.text02,
+            fontWeight: '300'
         }
 
         return(
-            <div className = 'Name' >
-                <h1 style={nameStyle} >{myName}</h1>
-                <div className="profession">
+            <div className='Name' >
+                <h1 id='myName' style={nameStyle} >{myName}</h1>
+                <div id="profession">
                     <h2 style={titleStyle} >{firstTitle}</h2>
                     <h2 style={titleStyle} >{secondTitle}</h2>
                 </div>
