@@ -2,21 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MainBox from './components/landing/mainBox/mainBox';
-
-let colorPalette = {
-  text01:'#f6ecc8',
-  text02: '#7fa1ce',
-  text03: '#4d6e9b',
-  background: '#050409',
-  boxBackground: '060608',
-  border: '#27556c',
-  white: '#ffff'
-}
-
-let style = {
-  backgroundColor: colorPalette.background,
-  height:'100vh',
-}
+import themes from './themes/themes';
 
 const links = [ { name:'Linkedin',
                   src: 'https://www.linkedin.com/in/mlacosta'
@@ -32,12 +18,26 @@ const links = [ { name:'Linkedin',
                 }
             ]
 
-function App() {
-  return (
-    <div className="App" style={style}>
-      <MainBox colorPalette = {colorPalette} contact = {links}></MainBox>
-    </div>
-  );
+/*Set Background Color*/ 
+let colorPalette = themes[0]; //choose a theme
+
+const body = document.getElementsByTagName("BODY")[0];
+body.setAttribute("style", `background-color: ${colorPalette.background}`);
+
+/*   MAIN APP      */ 
+            
+class App extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render(){
+    return (
+      <div className="App" >
+        <MainBox colorPalette = {colorPalette} contact = {links}></MainBox>
+      </div>
+    );
+  }
+
 }
 
 export default App;
