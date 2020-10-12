@@ -15,7 +15,7 @@ let colorPalette = {
 
 let style = {
   backgroundColor: colorPalette.background,
-  height:'100vh'
+  height:'100vh',
 }
 
 function App() {
