@@ -17,7 +17,7 @@ function Atom(){
 
 function AtomBar(){
     return(
-        <div className="AtomBar"><Atom/><a href="https://reactjs.org/" target='_blank'><span id='react-msg'>Powered by React.js</span></a></div>
+        <div className="AtomBar"><Atom/><a href="https://reactjs.org/" target='_blank'><span id='react-msg'>Coded with React.js</span></a></div>
     )
 }
 
