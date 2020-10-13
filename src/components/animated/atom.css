@@ -61,3 +61,15 @@ svg {
 .atom-container{
   position: relative;
 }
+
+@media only screen and (max-width: 700px) {
+  
+  #react-msg{
+      font-size: .7rem;
+  }
+  .AtomBar{
+    bottom: 25%;
+    left: -25%
+  }
+
+}

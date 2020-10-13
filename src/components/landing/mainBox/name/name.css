@@ -17,7 +17,7 @@
     .Name {
 
         font-size: 1.2rem;
-        margin: 30% 5%;
+        margin: 40% 5%;
     }
     
     #profession{
@@ -27,11 +27,20 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .Name{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     #profession{
         font-size: .8rem;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .Name{
+        font-size: .7rem;
+    }
+    #profession{
+        font-size: .6rem;
     }
 }
