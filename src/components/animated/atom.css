@@ -40,7 +40,7 @@ svg {
   }
 
   .AtomBar{
-      position: absolute;
+      position: fixed;
       bottom: 25px;
       left: -120px;
       color: #61dafb;

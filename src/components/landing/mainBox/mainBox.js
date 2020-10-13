@@ -30,7 +30,6 @@ class MainBox extends React.Component{
                 <Contact links={contact} colorPalette = {this.props.colorPalette}></Contact>
                 {/*<ProfilePic height='200px' top='340px' right = '290px'></ProfilePic>*/}
                 <Version colorPalette = {this.props.colorPalette} link={contact}/>
-                <AtomBar/>
             </div>
 
         );

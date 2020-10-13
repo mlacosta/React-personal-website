@@ -6,6 +6,7 @@ import MainBox from './components/landing/mainBox/mainBox';
 import Particles from 'react-particles-js';
 
 import themes from './themes/themes';
+import AtomBar from './components/animated/atom';
 
 const links = [ { name:'Linkedin',
                   src: 'https://www.linkedin.com/in/mlacosta'
@@ -46,6 +47,7 @@ class App extends React.Component {
         <Particles className="particles"/>
         <div style={pageStyle} className="page" >
           <MainBox colorPalette = {colorPalette} contact = {links}></MainBox>
+          <AtomBar/>
         </div>
       </div>
     );
