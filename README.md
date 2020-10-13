@@ -2,10 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # **Author: Mariano L. Acosta**
 
-## NPM Dependencies
+## NPM Dependencies 
 
 * [react-typist](https://github.com/jstejada/react-typist)
 * [react-particles-js](https://github.com/Wufe/react-particles-js)
+* [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 
 ## Landscape
