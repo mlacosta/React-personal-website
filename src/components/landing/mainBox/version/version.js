@@ -9,7 +9,7 @@ class Version extends React.Component{
         let color = this.props.colorPalette.text01;
         return(
             <span id="version" >
-                <a href="" style = {{color}}>{`Ver ${ver} build by Mariano L. Acosta`}</a>    
+                <a href="" style = {{color}}>{`Ver ${ver} built by Mariano L. Acosta`}</a>    
             </span>
         )
     }

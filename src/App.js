@@ -14,6 +14,11 @@ const links = [ { name:'Linkedin',
                 { name:'Github',
                   src: 'https://www.github.com/mlacosta'
                 },
+                {
+                  name: 'Soundcloud',
+                  src: 'https://www.soundcloud.com/mlacosta64'
+                }
+                ,
                 { name:'Twitch',
                   src: 'https://www.twitch.tv/mariandevs'
                 },
@@ -23,7 +28,7 @@ const links = [ { name:'Linkedin',
             ]
 
 /*Set Background Color*/ 
-let colorPalette = themes[1]; //choose a theme
+let colorPalette = themes[0]; //choose a theme
 
 const body = document.getElementsByTagName("BODY")[0];
 body.setAttribute("style", `background-color: ${colorPalette.background}`);
@@ -44,7 +49,7 @@ class App extends React.Component {
     }
     return (
       <div className="App" >
-        <Particles className="particles"/>
+        <Particles className="particles" />
         <div style={pageStyle} className="page" >
           <MainBox colorPalette = {colorPalette} contact = {links}></MainBox>
           <AtomBar/>
