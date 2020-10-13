@@ -14,11 +14,15 @@
     filter: brightness(200%) saturate(140%);   
 }
 
+#icon{
+    height: 30px;
+}
 @media only screen and (max-width: 1311px) {
 
     .Contact{
         left: auto;
-        display: flexbox;
+        display: flex;
+        justify-content: center;
     }
 
     .Contact a{
@@ -28,11 +32,3 @@
     
 }
 
-@media only screen and (max-width: 932px) {
-
-    .Contact{
-        display: none;
-    }
-
-
-}

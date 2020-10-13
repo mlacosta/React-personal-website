@@ -4,28 +4,10 @@ import './App.css';
 
 import MainBox from './components/landing/mainBox/mainBox';
 import Particles from 'react-particles-js';
-
 import themes from './themes/themes';
 import AtomBar from './components/animated/atom';
 
-const links = [ { name:'Linkedin',
-                  src: 'https://www.linkedin.com/in/mlacosta'
-                },
-                { name:'Github',
-                  src: 'https://www.github.com/mlacosta'
-                },
-                {
-                  name: 'Soundcloud',
-                  src: 'https://www.soundcloud.com/mlacosta64'
-                }
-                ,
-                { name:'Twitch',
-                  src: 'https://www.twitch.tv/mariandevs'
-                },
-                { name:'Email',
-                  src: 'mailto:marianoacosta.003@gmail.com'
-                }
-            ]
+import links from './links';
 
 /*Set Background Color*/ 
 let colorPalette = themes[0]; //choose a theme
@@ -38,7 +20,14 @@ body.setAttribute("style", `background-color: ${colorPalette.background}`);
 class App extends React.Component {
   constructor(props){
     super(props);
+    this.state = {width: window.innerWidth};
+    this.handleResize = this.handleResize.bind(this);
   }
+
+  handleResize(){
+    this.setState({width: window.innerWidth});
+  }
+
   render(){
     let pageStyle = {
       position: "absolute",
@@ -47,11 +36,14 @@ class App extends React.Component {
       width: "100%",
       height: "100%"
     }
+
+    window.addEventListener('resize', this.handleResize);
+
     return (
       <div className="App" >
         <Particles className="particles" />
         <div style={pageStyle} className="page" >
-          <MainBox colorPalette = {colorPalette} contact = {links}></MainBox>
+          <MainBox colorPalette = {colorPalette} contact = {links} width = {this.state.width}></MainBox>
           <AtomBar/>
         </div>
       </div>
