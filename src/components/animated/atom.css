@@ -1,0 +1,57 @@
+svg {
+    margin: auto;
+    overflow: visible;
+    position: relative; 
+    top:90px;
+    left: 60px;
+  }
+  
+  g {
+    transform-origin: 50% 50%;
+    animation: rotate 10s linear infinite;
+  }
+  
+  ellipse {
+    fill: none;
+    stroke: #61dafb;
+    stroke-width: 2px;
+    stroke-linecap: round;
+
+    animation: animate 2s linear infinite;
+  }
+  
+  circle {
+    fill: #61dafb;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .AtomBar{
+      position: absolute;
+      bottom: 25px;
+      left: -120px;
+      color: #61dafb;
+  }
+
+  a{
+      text-decoration: none;
+      color: #61dafb;
+  }
+
+  #react-msg{
+      position: relative;
+      bottom: 4px;
+  }

@@ -4,6 +4,7 @@ import Contact from '../mainBox/contact/contact';
 import Version from './version/version';
 import ProfilePic from '../../profilePic/profilePic';
 import './mainBox.css'
+import AtomBar from '../../animated/atom';
 
 
 class MainBox extends React.Component{
@@ -29,6 +30,7 @@ class MainBox extends React.Component{
                 <Contact links={contact} colorPalette = {this.props.colorPalette}></Contact>
                 {/*<ProfilePic height='200px' top='340px' right = '290px'></ProfilePic>*/}
                 <Version colorPalette = {this.props.colorPalette} link={contact}/>
+                <AtomBar/>
             </div>
 
         );
