@@ -3,7 +3,7 @@ svg {
     overflow: visible;
     position: relative; 
     top:90px;
-    left: 60px;
+    left: 65px;
   }
   
   g {
@@ -54,4 +54,6 @@ svg {
   #react-msg{
       position: relative;
       bottom: 4px;
+      font-weight: 300;
+      font-size: .8rem;
   }
