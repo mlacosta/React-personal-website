@@ -2,4 +2,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # **Author: Mariano L. Acosta**
 
-![Alt Text](https://media.giphy.com/media/zyS3Vrv5XNDaUwoLnT/giphy.gif)
+
+<img src="https://media.giphy.com/media/zyS3Vrv5XNDaUwoLnT/giphy.gif" width="800"  />
