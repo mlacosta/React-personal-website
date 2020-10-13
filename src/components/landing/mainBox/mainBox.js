@@ -14,10 +14,6 @@ class MainBox extends React.Component{
         let color = this.props.colorPalette;
         let style = {
             border: `1px solid ${color.border}`,
-            width: '80%',
-            maxWidth: '1300px',
-            height: '700px',
-            margin: '100px auto',
             color: color.text02
         };
 

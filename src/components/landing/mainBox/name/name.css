@@ -12,3 +12,26 @@
     line-height: 14px;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .Name {
+
+        font-size: 1.2rem;
+        margin: 30% 5%;
+    }
+    
+    #profession{
+        padding-top: 20px;
+        line-height: 14px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Name{
+        font-size: 1rem;
+    }
+    #profession{
+        font-size: .8rem;
+    }
+}

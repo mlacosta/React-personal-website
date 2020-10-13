@@ -57,3 +57,7 @@ svg {
       font-weight: 300;
       font-size: .8rem;
   }
+
+.atom-container{
+  position: relative;
+}

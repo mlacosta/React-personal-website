@@ -13,3 +13,26 @@
 .Contact a:hover{
     filter: brightness(200%) saturate(140%);   
 }
+
+@media only screen and (max-width: 1311px) {
+
+    .Contact{
+        left: auto;
+        display: flexbox;
+    }
+
+    .Contact a{
+        margin: 0 30px; 
+
+    }
+    
+}
+
+@media only screen and (max-width: 932px) {
+
+    .Contact{
+        display: none;
+    }
+
+
+}

@@ -2,7 +2,9 @@ import React from 'react';
 import Typist from 'react-typist';
 import './name.css'
 
-const myName = 'Mariano L. Acosta';
+
+
+const myName =  window.innerWidth > 700 ? 'Mariano L. Acosta' : 'Mariano Acosta' ;
 const firstTitle = 'Software Developer';
 const secondTitle = 'Electronics Engineer';
 

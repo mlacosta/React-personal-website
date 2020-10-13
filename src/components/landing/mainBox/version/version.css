@@ -14,3 +14,15 @@
 #version a:hover{
     filter: brightness(200%) saturate(140%);   
 }
+
+@media only screen and (max-width: 600px) {
+    #version{
+        position: absolute;
+        top:0;
+        left: 10%;
+        right: 10%;
+        margin: 10px 20px;
+        font-size: .6rem;
+        font-weight: 300;
+    }
+}
