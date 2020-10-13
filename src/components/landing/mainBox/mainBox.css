@@ -11,7 +11,7 @@
     font-size: 2.5rem;
 }
 
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 900px) and (max-width: 1200px){
     .MainBox{
         margin: 10% auto;
         height: 70%;
