@@ -10,7 +10,7 @@ import AtomBar from './components/animated/atom';
 import links from './links';
 
 /*Set Background Color*/ 
-let colorPalette = themes[3]; //choose a theme
+let colorPalette = themes[0]; //choose a theme
 
 const body = document.getElementsByTagName("BODY")[0];
 body.setAttribute("style", `background-color: ${colorPalette.background}`);
