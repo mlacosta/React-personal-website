@@ -17,6 +17,8 @@
 #icon{
     height: 20px;
 }
+
+
 @media only screen and (max-width: 1311px) {
 
     .Contact{
@@ -49,13 +51,22 @@
 
 @media only screen and (max-height: 450px) {
 
-
     .Contact{
-        position: absolute;
-        bottom: 3%;
-        right: 0;
-        width: 100%;
+        display: block;
+        bottom: 5%;
+        text-align: right;
+    }
+    
+    .Contact a{
+        margin: 0 20px;
     }
 
+}
+
+@media only screen and (max-width: 450px) {
+
+    .Contact{
+        display: none;
+    }
     
 }

@@ -6,7 +6,7 @@ let theme01 = {
     boxBackground: '060608',
     border: '#27556c',
     white: '#ffff',
-    name: 'intell'
+    name: 'ozone'
   }
   
 let theme02 = {
@@ -17,7 +17,7 @@ let theme02 = {
     boxBackground: '060608',
     border: '#2aff00',
     white: '#ffff',
-    name: 'U.F.O'
+    name: 'u.f.o'
 }
 
 let theme03 = {
@@ -39,10 +39,10 @@ let theme04 = {
   boxBackground: '#22223b',
   border: '#9a8c98',
   white: '#ffff',
-  name: 'indo silver'
+  name: 'indo silver club'
 }
 
-let theme05 = {
+/*let theme05 = {
   text01:'#2c0735',
   text02: '#4e148c',
   text03: '#140152',
@@ -51,7 +51,7 @@ let theme05 = {
   border: '#97dffc',
   white: '#ffff',
   name: 'ice ice'
-}
+}*/
 
 
 let theme06 = {
@@ -65,6 +65,28 @@ let theme06 = {
   name: 'cathode'
 }
 
-let themes = [theme01,theme02, theme03,theme04,theme05,theme06];
+let theme07 = {
+  text01:'#e1d021',
+  text02: '#dddddd',
+  text03: '#21c925',
+  background: '#645097',
+  boxBackground: '#370617',
+  border: '#e52f2f',
+  white: '#ffff',
+  name: 'gamecube'
+}
+
+/*let theme08 = {
+  text01:'#079330',
+  text02: '#0221ad',
+  text03: '#ffc001',
+  background: '#000000',
+  boxBackground: '#370617',
+  border: '#ff2d1b', 
+  white: '#ffff',
+  name: 'n64'
+}*/
+
+let themes = [theme01,theme02, theme03,theme04,theme06,theme07];
 
 export default themes;

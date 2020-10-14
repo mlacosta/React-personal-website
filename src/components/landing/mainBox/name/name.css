@@ -36,6 +36,12 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .Name {
+        margin: 150px 5%;
+    }
+}
+
 @media only screen and (max-height: 650px) {
     .Name{
         font-size: .7rem;
