@@ -38,7 +38,27 @@ let theme04 = {
   white: '#ffff'
 }
 
+let theme05 = {
+  text01:'#2c0735',
+  text02: '#4e148c',
+  text03: '#140152',
+  background: '#858ae3',
+  boxBackground: '#adb5bd',
+  border: '#97dffc',
+  white: '#ffff'
+}
 
-let themes = [theme01,theme02, theme03,theme04];
+
+let theme06 = {
+  text01:'#e59023',
+  text02: '#f48c06',
+  text03: '#faa307',
+  background: '#1f1407',
+  boxBackground: '#370617',
+  border: '#e59023',
+  white: '#ffff'
+}
+
+let themes = [theme01,theme02, theme03,theme04,theme05,theme06];
 
 export default themes;

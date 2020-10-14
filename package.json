@@ -1,5 +1,5 @@
 {
-  "homepage":"http://mlacosta.github.io",
+  "homepage": "http://mlacosta.github.io",
   "name": "mlacosta01",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,8 @@
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.3.0",
     "react-scripts": "3.4.3",
-    "react-typist": "^2.0.5"
+    "react-typist": "^2.0.5",
+    "social-media-icons-react": "^1.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",

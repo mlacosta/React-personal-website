@@ -22,7 +22,7 @@ class MainBox extends React.Component{
         return(
             <div className='MainBox' style={style}>
                 <span id='cursor'>{'>'}</span>    
-                <Name colorPalette = {this.props.colorPalette}/>
+                <Name colorPalette = {this.props.colorPalette} width = {this.props.width}/>
                 <Contact links={contact} colorPalette = {this.props.colorPalette} width = {this.props.width}></Contact>
                 {/*<ProfilePic height='200px' top='340px' right = '290px'></ProfilePic>*/}
                 <Version colorPalette = {this.props.colorPalette} link={contact}/>

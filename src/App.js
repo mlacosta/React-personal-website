@@ -10,23 +10,22 @@ import AtomBar from './components/animated/atom';
 import links from './links';
 
 /*Set Background Color*/ 
-let colorPalette = themes[3]; //choose a theme
 
-const body = document.getElementsByTagName("BODY")[0];
-body.setAttribute("style", `background-color: ${colorPalette.background}`);
 
 /*   MAIN APP      */ 
             
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = {width: window.innerWidth, height: window.innerWidth };
+    this.state = {width: window.innerWidth, height: window.innerWidth, colorPalette:themes[Math.floor(Math.random() * Math.floor(6))]};
     this.handleResize = this.handleResize.bind(this);
     
   }
 
   handleResize(){
     this.setState({width: window.innerWidth, height: window.innerHeight });
+    let index = Math.floor(Math.random() * Math.floor(6));
+    this.setState({colorPalette:themes[index]});
   }
 
   render(){
@@ -38,13 +37,16 @@ class App extends React.Component {
       height: "100%"
     }
 
+    const body = document.getElementsByTagName("BODY")[0];
+    body.setAttribute("style", `background-color: ${this.state.colorPalette.background}`);
+
     window.addEventListener('resize', this.handleResize);
 
     return (
       <div className="App" >
         <Particles className="particles" width={this.state.width} height = {this.state.height} style={{position:'fixed'}}/>
         <div style={pageStyle} className="page" >
-          <MainBox colorPalette = {colorPalette} contact = {links} width = {this.state.width}></MainBox>
+          <MainBox colorPalette = {this.state.colorPalette} contact = {links} width = {this.state.width}></MainBox>
           <AtomBar/>
         </div>
       </div>

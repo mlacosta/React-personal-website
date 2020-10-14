@@ -22,3 +22,13 @@
     }
 }
 
+@media only screen and (max-height: 440px){
+    .MainBox{
+        margin: 5% auto;
+        height: 70%;
+    }
+
+
+}
+
+

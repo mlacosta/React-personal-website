@@ -44,3 +44,9 @@
         font-size: .6rem;
     }
 }
+@media only screen and (max-height: 450px) {
+    .Name{
+        margin-top: 50px;
+    }
+
+}

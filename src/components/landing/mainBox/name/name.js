@@ -4,13 +4,15 @@ import './name.css'
 
 
 
-const myName =  window.innerWidth > 700 ? 'Mariano L. Acosta' : 'Mariano Acosta' ;
-const firstTitle = 'Software Developer';
-const secondTitle = 'Electronics Engineer';
+
 
 class Name extends React.Component{
 
     render(){
+        const myName =  this.props.width > 700 ? 'Mariano L. Acosta' : 'Mariano Acosta' ;
+        const firstTitle = 'Software Developer';
+        const secondTitle = 'Electronics Engineer';
+        
         let colors = this.props.colorPalette;
         let nameStyle = {
             color: colors.text01
