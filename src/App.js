@@ -20,12 +20,13 @@ body.setAttribute("style", `background-color: ${colorPalette.background}`);
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = {width: window.innerWidth};
+    this.state = {width: window.innerWidth, height: window.innerWidth };
     this.handleResize = this.handleResize.bind(this);
+    
   }
 
   handleResize(){
-    this.setState({width: window.innerWidth});
+    this.setState({width: window.innerWidth, height: window.innerHeight });
   }
 
   render(){
@@ -41,7 +42,7 @@ class App extends React.Component {
 
     return (
       <div className="App" >
-        <Particles className="particles" />
+        <Particles className="particles" width={this.state.width} height = {this.state.height} style={{position:'fixed'}}/>
         <div style={pageStyle} className="page" >
           <MainBox colorPalette = {colorPalette} contact = {links} width = {this.state.width}></MainBox>
           <AtomBar/>
