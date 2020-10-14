@@ -15,7 +15,7 @@
 }
 
 #icon{
-    height: 30px;
+    height: 20px;
 }
 @media only screen and (max-width: 1311px) {
 
@@ -23,11 +23,27 @@
         left: auto;
         display: flex;
         justify-content: center;
+ 
     }
 
     .Contact a{
-        margin: 0 30px; 
+        margin: 0 40px;
+    }
+    
+}
 
+@media only screen and (max-width: 1036px) {
+
+
+    .Contact{
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        width: 100%;
+    }
+
+    .Contact a{
+        margin: 0 5%;
     }
     
 }
