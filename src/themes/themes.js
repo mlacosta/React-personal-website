@@ -5,7 +5,8 @@ let theme01 = {
     background: '#050409',
     boxBackground: '060608',
     border: '#27556c',
-    white: '#ffff'
+    white: '#ffff',
+    name: 'intellisense'
   }
   
 let theme02 = {
@@ -15,7 +16,8 @@ let theme02 = {
     background: '#000',
     boxBackground: '060608',
     border: '#2aff00',
-    white: '#ffff'
+    white: '#ffff',
+    name: 'U.F.O'
 }
 
 let theme03 = {
@@ -25,7 +27,8 @@ let theme03 = {
   background: '#081c15',
   boxBackground: '#1b4332',
   border: '#d8f3dc',
-  white: '#ffff'
+  white: '#ffff',
+  name: 'substrate'
 }
 
 let theme04 = {
@@ -35,7 +38,8 @@ let theme04 = {
   background: '#4a4e69',
   boxBackground: '#22223b',
   border: '#9a8c98',
-  white: '#ffff'
+  white: '#ffff',
+  name: 'indo silver'
 }
 
 let theme05 = {
@@ -45,7 +49,8 @@ let theme05 = {
   background: '#858ae3',
   boxBackground: '#adb5bd',
   border: '#97dffc',
-  white: '#ffff'
+  white: '#ffff',
+  name: 'ice ice'
 }
 
 
@@ -56,7 +61,8 @@ let theme06 = {
   background: '#1f1407',
   boxBackground: '#370617',
   border: '#e59023',
-  white: '#ffff'
+  white: '#ffff',
+  name: 'cathode'
 }
 
 let themes = [theme01,theme02, theme03,theme04,theme05,theme06];

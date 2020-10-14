@@ -17,7 +17,8 @@ import links from './links';
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.state = {width: window.innerWidth, height: window.innerWidth, colorPalette:themes[Math.floor(Math.random() * Math.floor(6))]};
+    let index = Math.floor(Math.random() * Math.floor(6));
+    this.state = {width: window.innerWidth, height: window.innerWidth, colorPalette:themes[index]};
     this.handleResize = this.handleResize.bind(this);
     
   }

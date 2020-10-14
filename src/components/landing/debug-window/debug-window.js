@@ -11,6 +11,7 @@ class DebugWindow extends React.Component{
                 <span id='debug-title'>Debug mode</span><br/>
                 x-coor: {this.props.width} <br/>
                 y-coor: {this.props.height} <br/>
+                theme: {this.props.name}
             </div>
         )
     }
