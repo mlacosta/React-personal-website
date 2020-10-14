@@ -1,7 +1,7 @@
 import React from 'react';
 import Typist from 'react-typist';
 import './name.css'
-
+import 'react-typist/dist/Typist.css';
 
 
 
@@ -9,9 +9,9 @@ import './name.css'
 class Name extends React.Component{
 
     render(){
-        const myName =  this.props.width > 700 ? 'Mariano L. Acosta' : 'Mariano Acosta' ;
-        const firstTitle = 'Software Developer';
-        const secondTitle = 'Electronics Engineer';
+        const myName =  this.props.width > 700 ? 'Mariano L. Acosta ' : 'Mariano Acosta ' ;
+        const firstTitle = 'Software Developer ';
+        const secondTitle = 'Electronics Engineer ';
         
         let colors = this.props.colorPalette;
         let nameStyle = {
@@ -29,20 +29,20 @@ class Name extends React.Component{
         return(
             <div className='Name' >   
                     <h1 id='myName' style={nameStyle}>
-                        <Typist cursor={{element:' █'}}>
+                        <Typist cursor={{element:' █',hideWhenDone: true}}>
                             <Typist.Delay ms={delay1} />
                             {myName}
                         </Typist>
                     </h1>
                     <div id="profession">
                         <h2 style={titleStyle}>
-                            <Typist cursor={{element:' █'}}>
+                            <Typist cursor={{element:' █',hideWhenDone: true}}>
                                 <Typist.Delay ms={delay2} />
                                 {firstTitle}
                             </Typist>
                         </h2>
                         <h2 style={titleStyle}>
-                            <Typist cursor={{element:' █'}}>
+                            <Typist cursor={{element:' █',hideWhenDone: true}}>
                                 <Typist.Delay ms={delay3} />
                                 {secondTitle}
                             </Typist>
@@ -52,9 +52,9 @@ class Name extends React.Component{
                     <br/>
                     <br/>
                     <h3 id='myName' style={nameStyle}>
-                        <Typist cursor={{element:' █'}}>
+                        <Typist cursor={{element:' █',blink:true}}>
                             <Typist.Delay ms={delay3 + 600 + 1000} />
-                            {'Launch? (y/n)'}
+                            {'Launch? (y/n) '}
                         </Typist>
                     </h3>
             </div>

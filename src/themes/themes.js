@@ -6,7 +6,7 @@ let theme01 = {
     boxBackground: '060608',
     border: '#27556c',
     white: '#ffff',
-    name: 'intellisense'
+    name: 'intell'
   }
   
 let theme02 = {
