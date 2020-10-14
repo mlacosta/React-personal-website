@@ -5,7 +5,6 @@ import 'react-typist/dist/Typist.css';
 
 
 
-
 class Name extends React.Component{
 
     render(){

@@ -9,18 +9,16 @@ import AtomBar from './components/animated/atom';
 
 import links from './links';
 
-/*Set Background Color*/ 
-
 
 /*   MAIN APP      */ 
             
 class App extends React.Component {
+
   constructor(props){
     super(props);
     let index = Math.floor(Math.random() * Math.floor(6));
-    this.state = {width: window.innerWidth, height: window.innerWidth, colorPalette:themes[index]};
+    this.state = {width: window.innerWidth, height: window.innerHeight, colorPalette:themes[index]};
     this.handleResize = this.handleResize.bind(this);
-    
   }
 
   handleResize(){
