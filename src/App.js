@@ -46,7 +46,7 @@ class App extends React.Component {
       <div className="App" >
         <Particles className="particles" width={this.state.width} height = {this.state.height} style={{position:'fixed'}}/>
         <div style={pageStyle} className="page" >
-          <MainBox colorPalette = {this.state.colorPalette} contact = {links} width = {this.state.width}></MainBox>
+          <MainBox colorPalette = {this.state.colorPalette} contact = {links} width = {this.state.width} height = {this.state.height}></MainBox>
           <AtomBar/>
         </div>
       </div>

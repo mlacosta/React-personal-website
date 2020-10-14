@@ -3,9 +3,9 @@ import Name from './name/name';
 import Contact from '../mainBox/contact/contact';
 import Version from './version/version';
 import ProfilePic from '../../profilePic/profilePic';
-import './mainBox.css'
-import AtomBar from '../../animated/atom';
+import DebugWindow from '../debug-window/debug-window';
 
+import './mainBox.css'
 
 class MainBox extends React.Component{
 
@@ -21,7 +21,8 @@ class MainBox extends React.Component{
 
         return(
             <div className='MainBox' style={style}>
-                <span id='cursor'>{'>'}</span>    
+                <span id='cursor'>{'>'}</span>
+                <DebugWindow width = {this.props.width} height = {this.props.height} colors = {this.props.colorPalette} />     
                 <Name colorPalette = {this.props.colorPalette} width = {this.props.width}/>
                 <Contact links={contact} colorPalette = {this.props.colorPalette} width = {this.props.width}></Contact>
                 {/*<ProfilePic height='200px' top='340px' right = '290px'></ProfilePic>*/}

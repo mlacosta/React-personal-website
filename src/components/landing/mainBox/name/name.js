@@ -29,25 +29,34 @@ class Name extends React.Component{
         return(
             <div className='Name' >   
                     <h1 id='myName' style={nameStyle}>
-                        <Typist>
+                        <Typist cursor={{element:' █'}}>
                             <Typist.Delay ms={delay1} />
                             {myName}
                         </Typist>
                     </h1>
                     <div id="profession">
                         <h2 style={titleStyle}>
-                            <Typist>
+                            <Typist cursor={{element:' █'}}>
                                 <Typist.Delay ms={delay2} />
                                 {firstTitle}
                             </Typist>
                         </h2>
                         <h2 style={titleStyle}>
-                            <Typist>
+                            <Typist cursor={{element:' █'}}>
                                 <Typist.Delay ms={delay3} />
                                 {secondTitle}
                             </Typist>
                         </h2>
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h3 id='myName' style={nameStyle}>
+                        <Typist cursor={{element:' █'}}>
+                            <Typist.Delay ms={delay3 + 600 + 1000} />
+                            {'Launch? (y/n)'}
+                        </Typist>
+                    </h3>
             </div>
         );
     }
