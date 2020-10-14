@@ -70,3 +70,11 @@ svg {
 
 
 }
+
+@media only screen and (max-height: 440px) {
+
+  .AtomBar{
+    display: none;
+  }
+
+}
