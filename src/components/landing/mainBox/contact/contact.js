@@ -12,7 +12,7 @@ class Contact extends React.Component{
             <div className="Contact" >
                 {this.props.links.map(link => 
                     <a href={link.src} target='_blank' style={style}>
-                        { this.props.width >1036? link.name : <img id='icon'src={link.icon} style = {{color:'#a0f'}}></img> }
+                        { this.props.width >1036? link.name :link.icon }
                     </a> )
                 }
             </div>
