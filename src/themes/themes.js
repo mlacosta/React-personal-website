@@ -87,6 +87,19 @@ let theme07 = {
   name: 'n64'
 }*/
 
-let themes = [theme01,theme02, theme03,theme04,theme06,theme07];
+let theme09 = {
+  text01:'#165550',
+  text02: '#aed4db',
+  text03: '#242929',
+  background: '#ffff',
+  boxBackground: '#242929',
+  border: '#20a9b1', 
+  white: '#ffff',
+  name: 'no end'
+}
+
+
+
+let themes = [theme01,theme02, theme03,theme04,theme06,theme09];
 
 export default themes;
