@@ -89,9 +89,9 @@ let theme07 = {
 
 let theme09 = {
   text01:'#165550',
-  text02: '#aed4db',
+  text02: '#20a9b1',
   text03: '#242929',
-  background: '#ffff',
+  background: '#fefefe',
   boxBackground: '#242929',
   border: '#20a9b1', 
   white: '#ffff',
