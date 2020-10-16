@@ -5,6 +5,7 @@ import MainBox from './components/landing/mainBox/mainBox';
 import Particles from 'react-particles-js';
 import themes from './themes/themes';
 import AtomBar from './components/animated/atom';
+import Display from './components/about/display/Display';
 
 import links from './links';
 
@@ -16,7 +17,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     let index = Math.floor(Math.random() * Math.floor(6));
-    index = 5; //debug purposes
+    //index = 5; //debug purposes
     this.state = {width: window.innerWidth, height: window.innerHeight, colorPalette:themes[index]};
     this.handleResize = this.handleResize.bind(this);
   }
@@ -24,7 +25,7 @@ class App extends React.Component {
   handleResize(){
     this.setState({width: window.innerWidth, height: window.innerHeight });
     let index = Math.floor(Math.random() * Math.floor(6));
-    index = 5; //debug purposes
+    //index = 5; //debug purposes
     this.setState({colorPalette:themes[index]});
   }
 
@@ -64,12 +65,14 @@ class App extends React.Component {
           }
         />
         <div style={pageStyle} className="page" >
+          
           <MainBox 
             colorPalette = {this.state.colorPalette} 
             contact = {links} 
             width = {this.state.width} 
             height = {this.state.height}></MainBox>
           <AtomBar/>
+          <Display colors = {this.state.colorPalette}/>
         </div>
       </div>
     );
