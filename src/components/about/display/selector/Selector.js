@@ -6,27 +6,27 @@ import Box from './box/Box';
 let selectors  = [
     {
         title:'About Me',
-        description:'[Minim] : [Nulla]',
+        description:'[Minim] : [Null]',
         icon: <i class="fas fa-address-card"></i>
     },
     {
         title:'Pariatur anim voluptate',
-        description:'[Minim] : [Nulla]',
+        description:'[Minim] : [Null]',
         icon: <i class="fas fa-tools"></i>
     },
     {
         title:'Pariatur anim voluptate',
-        description:'[Minim] : [Nulla]',
+        description:'[Minim] : [Null]',
         icon: <i class="fas fa-laptop-code"></i>
     },
     {
         title:'Pariatur anim voluptate',
-        description:'[Minim] : [Nulla]',
+        description:'[Minim] : [Null]',
         icon: <i class="fas fa-laptop-code"></i>
     },
     {
         title:'Pariatur anim voluptate',
-        description:'[Minim] : [Nulla]',
+        description:'[Minim] : [Null]',
         icon: <i class="fas fa-laptop-code"></i>
     },
 

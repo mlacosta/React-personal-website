@@ -1,5 +1,7 @@
 import React from 'react';
 import './Box.css'
+import Typist from 'react-typist';
+import 'react-typist/dist/Typist.css';
 
 class Box extends React.Component{
 
@@ -26,7 +28,9 @@ class Box extends React.Component{
             <div className="Box" style = {boxStyle} >
                 <div className="icon">{icon}</div>
                 <div className="box-container">
-                    <p id='box-title'>{title}</p>
+                    <p id='box-title'>
+                        <Typist>{title}</Typist>
+                    </p>
                     <p id='box-description'>{description}</p>
                 </div>
             </div>

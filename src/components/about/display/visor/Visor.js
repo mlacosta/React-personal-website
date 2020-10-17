@@ -5,6 +5,8 @@ import '../../../misc/Button01';
 import Button01 from '../../../misc/Button01';
 import './Visor.css';
 import Display from '../Display';
+import Typist from 'react-typist';
+import 'react-typist/dist/Typist.css';
 
 class Visor extends React.Component{
 
