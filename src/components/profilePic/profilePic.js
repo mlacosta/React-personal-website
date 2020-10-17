@@ -5,10 +5,11 @@ import './profilePic.css';
 
 class ProfilePic extends React.Component{
     render(){
-        let style = {
-            height: this.props.height,
-        }
-        return (<img id='profilePic' src ={picture} style={style}></img>);
+
+        return (<img id='profilePic' 
+                    src ={picture} 
+                    style ={this.props.style}>    
+                </img>);
     }
 }
 

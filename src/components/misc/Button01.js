@@ -8,8 +8,17 @@ class Button01 extends React.Component{
             borderColor: this.props.colors.border,
             color: this.props.colors.text02
         }
+
+        let style = this.props.style;
+
         return(
-            <a id='mybuton' style = {styles} href = {this.props.ref}> {this.props.msg} </a>
+            <div className="container" style={style}>
+                <a id='mybuton' style = {styles} 
+                                href = {this.props.ref}> 
+                    {this.props.msg} 
+                </a>
+            </div>
+
         )
     }
 }
