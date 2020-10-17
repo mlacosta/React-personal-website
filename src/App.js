@@ -72,7 +72,7 @@ class App extends React.Component {
             width = {this.state.width} 
             height = {this.state.height}></MainBox>
           <AtomBar/>
-          <Display colors = {this.state.colorPalette}/>
+          
         </div>
       </div>
     );
