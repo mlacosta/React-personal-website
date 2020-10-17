@@ -1,3 +1,7 @@
+.landing{
+    height: 100vh;
+}
+
 .MainBox{
     position: relative;
     padding: 20px;

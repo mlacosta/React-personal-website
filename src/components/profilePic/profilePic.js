@@ -7,8 +7,6 @@ class ProfilePic extends React.Component{
     render(){
         let style = {
             height: this.props.height,
-            top: this.props.top,
-            right: this.props.right
         }
         return (<img id='profilePic' src ={picture} style={style}></img>);
     }

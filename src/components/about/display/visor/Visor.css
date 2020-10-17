@@ -1,0 +1,7 @@
+.Visor{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 90%;
+}
