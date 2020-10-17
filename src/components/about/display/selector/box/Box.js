@@ -7,8 +7,8 @@ class Box extends React.Component{
 
         let border = this.props.colors.border;
         let icon = this.props.icon;
-        //let title = this.props.title;
-        //let description = this.props.description;
+        let title = this.props.title;
+        let description = this.props.description;
 
         const boxStyle = {
             borderColor: border
@@ -24,9 +24,11 @@ class Box extends React.Component{
 
         return(
             <div className="Box" style = {boxStyle} >
-                {<div className="icon">{icon}</div>}
-                <p id='box-title'></p>
-                <p id='box-description'></p>
+                <div className="icon">{icon}</div>
+                <div className="box-container">
+                    <p id='box-title'>{title}</p>
+                    <p id='box-description'>{description}</p>
+                </div>
             </div>
         )
 
