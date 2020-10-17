@@ -100,6 +100,6 @@ let theme09 = {
 
 
 
-let themes = [theme01,theme02, theme03,theme04,theme06,theme09];
+let themes = [theme01, theme03,theme04,theme06,theme09];
 
 export default themes;

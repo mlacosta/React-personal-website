@@ -2,6 +2,7 @@ import React from 'react';
 import './Display.css';
 import './visor/Visor';
 import Visor from './visor/Visor';
+import Selector from './selector/Selector';
 
 class Display extends React.Component{
 
@@ -13,6 +14,7 @@ class Display extends React.Component{
 
         return(
             <div className="display" style = {style}>
+                <Selector colors={this.props.colors}/>
                 <Visor 
                     colors={this.props.colors}
                     title = {'Adipisicing veniam ex in dolore culpa enim '}

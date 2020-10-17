@@ -1,0 +1,11 @@
+.Selector{
+    position: absolute;
+    width: 40%;
+    left: 0;
+    height: 90%;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 40px ;
+    border: 1px solid red;
+}
