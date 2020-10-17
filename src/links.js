@@ -1,5 +1,4 @@
 
-import React from 'react';
 import email from './components/landing/mainBox/contact/icons/email.svg';
 import github from './components/landing/mainBox/contact/icons/github.svg';
 import linkedin from './components/landing/mainBox/contact/icons/linkedin.svg';
@@ -9,25 +8,25 @@ import soundcloud from './components/landing/mainBox/contact/icons/soundcloud.sv
 
 const links = [ { name:'Linkedin',
                   src: 'https://www.linkedin.com/in/mlacosta',
-                  icon: <i class="fab fa-linkedin-in"></i>
+                  icon: linkedin
                 },
                 { name:'Github',
                   src: 'https://www.github.com/mlacosta',
-                  icon: <i class="fab fa-github"></i>
+                  icon: github
                 },
                 {
                   name: 'Soundcloud',
                   src: 'https://www.soundcloud.com/mlacosta64',
-                  icon: <i class="fab fa-soundcloud"></i>
+                  icon: soundcloud
                 }
                 ,
                 { name:'Twitch',
                   src: 'https://www.twitch.tv/mariandevs',
-                  icon: <i class="fab fa-twitch"></i>
+                  icon: twitch
                 },
                 { name:'Email',
                   src: 'mailto:marianoacosta.003@gmail.com',
-                  icon: <i class="far fa-envelope"></i>
+                  icon: email
                 }
             ]
 
