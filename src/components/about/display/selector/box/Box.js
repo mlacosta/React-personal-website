@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Box.css'
 
 class Box extends React.Component{
 
@@ -7,8 +7,8 @@ class Box extends React.Component{
 
         let border = this.props.colors.border;
         let icon = this.props.icon;
-        let title = this.props.title;
-        let description = this.props.description;
+        //let title = this.props.title;
+        //let description = this.props.description;
 
         const boxStyle = {
             borderColor: border
@@ -23,8 +23,8 @@ class Box extends React.Component{
         }
 
         return(
-            <div className="Box">
-                <div className="icon"></div>
+            <div className="Box" style = {boxStyle} >
+                {<div className="icon">{icon}</div>}
                 <p id='box-title'></p>
                 <p id='box-description'></p>
             </div>
