@@ -10,7 +10,6 @@ import PageContainer from './components/misc/pageContainer/PageContainer'
 
 import links from './links';
 
-
 /*   MAIN APP      */ 
             
 class App extends React.Component {
@@ -32,11 +31,23 @@ class App extends React.Component {
 
   render(){
 
-
     const body = document.getElementsByTagName("BODY")[0];
     body.setAttribute("style", `background-color: ${this.state.colorPalette.background}`);
 
     window.addEventListener('resize', this.handleResize);
+
+    const particleStyle = (this.state.colorPalette.name === 'no end') ? {
+        particles:{
+          color: {
+            value: this.state.colorPalette.text02
+          },
+          "line_linked": {
+            color:this.state.colorPalette.text02
+          }
+        }
+      } : {
+          //add another option if you want
+      }
 
     return (
       <div className="App" >
@@ -45,31 +56,18 @@ class App extends React.Component {
           width = {this.state.width} 
           height = {this.state.height} 
           style = {{position:'fixed'}}
-          params = {(this.state.colorPalette.name === 'no end') ? {
-            particles:{
-              color: {
-                value: this.state.colorPalette.text02
-              },
-              "line_linked": {
-                color:this.state.colorPalette.text02
-              }
-            }
-           } : {
-              //add another option if you want
-           }
-          }
+          params = {particleStyle}
         />
         <PageContainer>
           <MainBox 
             colorPalette = {this.state.colorPalette} 
             contact = {links} 
             width = {this.state.width} 
-            height = {this.state.height}></MainBox>
+            height = {this.state.height}>
+          </MainBox>
           <AtomBar/>
           <Display colors = {this.state.colorPalette}/>
         </PageContainer>
-
-
       </div>
     );
   }
