@@ -5,19 +5,22 @@
     width: 100%;
     border-width: 1px 0;
     border-style: solid;
+    transition-duration: .7s;
 }
 
 .Box:hover{
-    top:-20px;
-    right: 50px;
+    position: relative;
+   /* top:-20px;
+    right: 20px;*/
     border-width: 1px;
-    background-color: black;
-    color: chartreuse;
-    -webkit-transition: all 0.7s ease-out;
-    -moz-transition: all 0.7s ease-out;
-     -ms-transition: all 0.7s ease-out;
-      -o-transition: all 0.7s ease-out;
-         transition: all 0.7s ease-out;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    -webkit-transform: translate(-20px,-20px); 
+    -moz-transform: translate(-20px,-20px); 
+    -ms-transform: translate(-20px,-20px); 
+    -o-transform: translate(-20px,-20px); 
+    transform: translate(-20px,-20px); 
+    
 
 }
 
@@ -48,4 +51,11 @@
 #box-description{
     font-size: 300;
     margin:0;    
+}
+
+.item-container{
+    font-size: .85rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

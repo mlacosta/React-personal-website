@@ -3,6 +3,7 @@ import './Display.css';
 import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
+import ProfilePic from '../../profilePic/profilePic';
 
 class Display extends React.Component{
 
@@ -30,7 +31,6 @@ class Display extends React.Component{
                 }
             })
         }
-
     }
 
     render(){
@@ -39,8 +39,15 @@ class Display extends React.Component{
             color: this.props.colors.text02
         };
 
+        const picStyle = {
+            height:'90px',
+            position: 'absolute',
+            margin:'10px 0 0 30px'
+        }
+
         return(
             <div className="display" style = {style}>
+                <ProfilePic style={picStyle} layerColor = {this.props.colors.background}/> 
                 <Selector colors={this.props.colors} onHover={this.handleHover}/>
                 <Visor 
                     colors={this.props.colors}

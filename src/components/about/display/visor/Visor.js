@@ -12,7 +12,11 @@ class Visor extends React.Component{
     render(){
 
         const picStyle = {
-            height:'150px',
+            display:'none',
+            height:'120px',
+            position: 'absolute',
+            right: 20,
+            top: -20
         }
 
         const buttonStyle = {
@@ -21,7 +25,7 @@ class Visor extends React.Component{
             justifyContent:'center',
             backgroundColor:'#eee',
             marginTop:70,
-            bottom:150
+            bottom:80,
         }
 
         return(

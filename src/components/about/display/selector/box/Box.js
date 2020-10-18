@@ -30,11 +30,11 @@ class Box extends React.Component{
                 
                 <div className="box-container">
                     
-                    <p id='box-title'>
-                        <Typist>{title}</Typist>
+                    <p id='box-title' style={titleStyle}>
+                        <Typist cursor={{hideWhenDone: true}}>{title}</Typist>
                     </p>
                     
-                    <p id='box-description'>{description}</p>
+                    <p id='box-description' style={descStyle}>{description}</p>
                     {/* */}
                 </div>
                
