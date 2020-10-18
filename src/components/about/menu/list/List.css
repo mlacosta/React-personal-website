@@ -6,9 +6,18 @@
     height: 250px;
     border-width:  0 0 0 1px;
     border-style: solid;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
+
 }
 
 .list-element{
     cursor: pointer;
+    height: 100%;
+    padding: 10% 0;
+    padding-left:10px ;
+}
+
+
+.list-element:hover{
+    background-color: black;
 }

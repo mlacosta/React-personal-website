@@ -5,7 +5,7 @@ function List(props){
 
     return(
         <div className="list-container">
-            {props.elements.map((value)=>{return(<div class='list-element'>{value}</div>)})}
+            {props.elements.map((value)=>{return(<div class='list-element' onClick = {props.onClick(value)}>{value}</div>)})}
         </div>
     );
 }

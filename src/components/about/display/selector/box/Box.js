@@ -19,11 +19,11 @@ class Box extends React.Component{
         }
 
         const titleStyle = {
-            color: this.props.colors.text01   
+            color: this.props.highlight?this.props.colors.text01 :this.props.colors.text02
         }
 
         const descStyle = {
-            color: this.props.highlight?this.props.colors.text01 :this.props.colors.text02
+            color: this.props.highlight?this.props.colors.text02 :this.props.colors.text02
         }
 
         return(

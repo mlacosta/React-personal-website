@@ -2,7 +2,6 @@ import React from 'react';
 import 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
 
-
 function age(dob) { 
     const birth =  new Date(dob);
     let diff_ms = Date.now() - birth.getTime();
@@ -10,6 +9,23 @@ function age(dob) {
   
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
+
+
+let languages = [
+                 {name: 'Full-Stack Development',
+                 content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+                 },
+                 {name: 'Machine Learning',
+                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn']
+                 },
+                 {name: 'Embedded Systems',
+                 content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS']
+                 },
+                 {name: 'Electronics',
+                 content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice']
+                 }
+                ]
+                               
 
 
 let selectors  = [
@@ -46,8 +62,7 @@ let selectors  = [
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
             title: 'Select one field:',
-            description: <Menu elements= {['Full-Stack Development','Machine Learning','Embedded Systems','Electronics']}
-                               items = {['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']}/>
+            description: <Menu content = {languages}/>
         }
     },
     {
