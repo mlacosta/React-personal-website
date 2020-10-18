@@ -4,27 +4,28 @@ import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
 import ProfilePic from '../../profilePic/profilePic';
+import selectors from '../display/selector/selectors'
 
 class Display extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {
+            currentBox: selectors[0].title,
             visor:{
-                title: 'Adipisicing veniam ex in dolore culpa enim ',
-                description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                            'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                            ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                            ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'+
-                            ' Cillum duis dolor est Lorem fugiat amet sint reprehenderit.'
-            }
+                title: selectors[0].visor.title,
+                description:selectors[0].visor.description
+            },
+            boxes: selectors.map((value)=>{return value.title}),
+            
         }
         this.handleHover = this.handleHover.bind(this);
     }
 
-    handleHover(title,description){
+    handleHover(boxTitle,title,description){
         return ()=>{
             this.setState({
+                currentBox: boxTitle,
                 visor:{
                     title,
                     description
@@ -49,7 +50,9 @@ class Display extends React.Component{
         return(
             <div className="display" style = {style}>
                 <ProfilePic style={picStyle} layerColor = {this.props.colors.background}/> 
-                <Selector colors={this.props.colors} onHover={this.handleHover}/>
+                <Selector colors={this.props.colors} 
+                          onHover={this.handleHover}
+                          currentBox={this.state.currentBox}/>
                 <Visor 
                     colors={this.props.colors}
                     title = {this.state.visor.title}

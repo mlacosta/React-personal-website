@@ -3,7 +3,7 @@ let theme01 = {
     text02: '#7fa1ce',
     text03: '#4d6e9b',
     background: '#050409',
-    boxBackground: '060608',
+    boxBackground: '#060608',
     border: '#27556c',
     white: '#ffff',
     name: 'ozone'
@@ -92,7 +92,7 @@ let theme09 = {
   text02: '#20a9b1',
   text03: '#242929',
   background: '#fefefe',
-  boxBackground: '#242929',
+  boxBackground: '#bbeaed',
   border: '#20a9b1', 
   white: '#ffff',
   name: 'no end'

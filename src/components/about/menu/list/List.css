@@ -1,0 +1,14 @@
+.list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10%;
+    height: 250px;
+    border-width:  0 0 0 1px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.list-element{
+    cursor: pointer;
+}

@@ -25,6 +25,7 @@ class Selector extends React.Component{
                                     description = {select.description}
                                     icon = {select.icon}
                                     visor  = {select.visor}
+                                    highlight = {(select.title === this.props.currentBox) ? true : false}
                                     onHover = {onHover}/>)
                     })
                 }

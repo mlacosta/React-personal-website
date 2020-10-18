@@ -13,19 +13,21 @@ class Box extends React.Component{
         let description = this.props.description;
 
         const boxStyle = {
-            borderColor: border
+            borderColor: border,
+            backgroundColor: this.props.highlight?this.props.colors.boxBackground:'inherit',
+            color: this.props.highlight?this.props.colors.text01:'inherit'
         }
 
         const titleStyle = {
-            color: this.props.colors.text01
+            color: this.props.colors.text01   
         }
 
         const descStyle = {
-            color: this.props.colors.text02
+            color: this.props.highlight?this.props.colors.text01 :this.props.colors.text02
         }
 
         return(
-            <div className="Box" style = {boxStyle} onMouseOver = {this.props.onHover(this.props.visor.title,this.props.visor.description)}>
+            <div className="Box" style = {boxStyle} onMouseOver = {this.props.onHover(this.props.title,this.props.visor.title,this.props.visor.description)}>
                 <div className="icon">{icon}</div>
                 
                 <div className="box-container">
