@@ -13,16 +13,24 @@ function age(dob) {
 
 let languages = [
                  {name: 'Full-Stack Development',
+                 title: 'Nisi ex ut minim proident sunt',
+                 description:'Occaecat laborum laboris',
                  content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
                  },
                  {name: 'Machine Learning',
-                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn']
+                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
+                 title: 'Reprehenderit labore duis culpa',
+                 description:'Occaecat laborum laboris',
                  },
                  {name: 'Embedded Systems',
-                 content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS']
+                 content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
+                 title: 'Et anim sunt magna tempor',
+                 description:'Occaecat laborum laboris',
                  },
                  {name: 'Electronics',
-                 content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice']
+                 content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                 title: 'Non commodo ullamco dolore',
+                 description:'Occaecat laborum laboris',
                  }
                 ]
                                
@@ -32,7 +40,7 @@ let selectors  = [
     {   
         
         title:'About Me',
-        description:'[Human] : [After All]',
+        description:'', //'[Human] : [After All]',
         icon: <i class="fas fa-address-card"></i>,
         visor:{
             title: 'Welcome! My Name is Mariano L. Acosta',
@@ -58,7 +66,7 @@ let selectors  = [
     },
     {
         title:'Languages & Frameworks',
-        description:'[Id Est] : [Polyglot]',
+        description:'', //'[Id Est] : [Polyglot]',
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
             title: 'Select one field:',
@@ -67,7 +75,7 @@ let selectors  = [
     },
     {
         title:'Tools & Abilities',
-        description:'[Work Harder] : [Make it Better]',
+        description:'', //[Work Harder] : [Make it Better]',
         icon: <i class="fas fa-tools"></i>,
         visor:{
             title: 'Ipsum commodo tempor ea consectetur aliquip',
@@ -79,7 +87,7 @@ let selectors  = [
     },
     {
         title:'Work Experience',
-        description:'[Leave] : [Mark]',
+        description:'', //'[Leave] : [Mark]',
         icon: <i class="fas fa-suitcase"></i>,
         visor:{
             title: 'Anim eiusmod elit excepteur dolor Lorem ut',
@@ -91,7 +99,7 @@ let selectors  = [
     },
     {
         title:'Education',
-        description:'[Shoulders] : [Giant]',
+        description:'', //'[Shoulders] : [Giant]',
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Aliqua occaecat est cillum.',
@@ -102,7 +110,7 @@ let selectors  = [
     },
     {
         title:'Hobbies & Interests',
-        description:'[Soul Body] : [Ecstasy]',
+        description:'' ,//'[Soul Body] : [Ecstasy]',
         icon: <i class="fas fa-gamepad"></i>,
         visor:{
             title: 'Non sint ex ea ad',
