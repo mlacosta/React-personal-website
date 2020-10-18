@@ -5,13 +5,20 @@
     width: 100%;
     border-width: 1px 0;
     border-style: solid;
-    
 }
 
 .Box:hover{
-    top:-50px;
+    top:-20px;
     right: 50px;
     border-width: 1px;
+    background-color: black;
+    color: chartreuse;
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+     -ms-transition: all 0.7s ease-out;
+      -o-transition: all 0.7s ease-out;
+         transition: all 0.7s ease-out;
+
 }
 
 .icon{

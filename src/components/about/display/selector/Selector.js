@@ -1,36 +1,8 @@
 import React from 'react';
 import './Selector.css';
 import Box from './box/Box';
+import selectors from './selectors'
 
-
-let selectors  = [
-    {
-        title:'About Me',
-        description:'[Minim] : [Null]',
-        icon: <i class="fas fa-address-card"></i>
-    },
-    {
-        title:'Pariatur anim voluptate',
-        description:'[Minim] : [Null]',
-        icon: <i class="fas fa-tools"></i>
-    },
-    {
-        title:'Pariatur anim voluptate',
-        description:'[Minim] : [Null]',
-        icon: <i class="fas fa-laptop-code"></i>
-    },
-    {
-        title:'Pariatur anim voluptate',
-        description:'[Minim] : [Null]',
-        icon: <i class="fas fa-laptop-code"></i>
-    },
-    {
-        title:'Pariatur anim voluptate',
-        description:'[Minim] : [Null]',
-        icon: <i class="fas fa-laptop-code"></i>
-    },
-
-]
 
 class Selector extends React.Component{
 
@@ -41,6 +13,9 @@ class Selector extends React.Component{
         let styles = {
             borderColor: colors.border
         }
+
+        let onHover =  this.props.onHover;
+
         return(
             <div className="Selector" style={styles}>
                 {selectors.map(
@@ -48,7 +23,9 @@ class Selector extends React.Component{
                         return(<Box colors = {colors}
                                     title = {select.title}
                                     description = {select.description}
-                                    icon = {select.icon}/>)
+                                    icon = {select.icon}
+                                    visor  = {select.visor}
+                                    onHover = {onHover}/>)
                     })
                 }
             </div>
