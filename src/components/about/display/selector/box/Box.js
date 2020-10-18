@@ -27,12 +27,17 @@ class Box extends React.Component{
         return(
             <div className="Box" style = {boxStyle} >
                 <div className="icon">{icon}</div>
+                
                 <div className="box-container">
+                    
                     <p id='box-title'>
                         <Typist>{title}</Typist>
                     </p>
+                    
                     <p id='box-description'>{description}</p>
+                    {/* */}
                 </div>
+               
             </div>
         )
 

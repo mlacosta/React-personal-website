@@ -1,10 +1,17 @@
 .Box{
+    position: relative;
     display: flex;
     height: 100%;
     width: 100%;
     border-width: 1px 0;
     border-style: solid;
     
+}
+
+.Box:hover{
+    top:-50px;
+    right: 50px;
+    border-width: 1px;
 }
 
 .icon{
@@ -19,12 +26,19 @@
 
 .box-container{
     padding-left: 30px;
+    line-height: .5;
 }
 
 #box-title{
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .fas{
     font-size: 2.4rem;
+}
+
+#box-description{
+    font-size: 300;
+    margin:0;    
 }
