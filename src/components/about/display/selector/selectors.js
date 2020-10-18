@@ -17,11 +17,22 @@ let selectors  = [
         icon: <i class="fas fa-address-card"></i>,
         visor:{
             title: 'Welcome! My Name is Mariano L. Acosta',
-            description:`I'm a ${age('08/13/1993')} years old Engineer from Argentina.
-            In 2018, I graduated from the National University of Mar del Plata with an Engineering Degree in Electronics, which is equivalent to a Bachelors + Master degree.
-            Also, in 2017 I had the opportunity to be an exchange student at Virginia Tech, U.S, with a Fulbright Scholarship.
-            Recently in 2020, I've decided to go all-in with Computer Science and Software Engineering.
-            I've been in love with computers and mathemathics since I was in kindergarden, so this career change felt only natural`
+            description: 
+                        <>
+                            <p style={{marginBottom:30}}>
+                                I'm a {age('08/13/1993')} years old Engineer from Argentina.
+                                In 2018, I graduated from the <a href='https://www.fi.mdp.edu.ar/' target='_blank'>University of Mar del Plata</a> with an Engineering Degree in Electronics, which is equivalent to a Bachelors + Master degree.
+                                Also, I had the opportunity to be an exchange student at <a href="https://vt.edu/" target='_blank'>Virginia Tech</a> (U.S) with a Fulbright Scholarship.
+                            </p>
+                            <p style={{marginBottom:30}}>
+                                {`During my career, I've worked in a variety of fields, ranging from Avionics Systems, Power Electronics, Embedded Systems,
+                                Machine Learning, Signal Processing and Fullstack Web Development.` }
+                            </p>
+                            <p style={{marginBottom:30}}>
+                                {`Recently, in 2020, I've decided to go all-in with Computer Science and Software Engineering.
+                                I've been in love with computers and mathemathics since I was in kindergarden, so this career change felt only natural.` }
+                            </p>
+                        </>
         }
     },
     {
