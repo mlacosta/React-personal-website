@@ -16,10 +16,12 @@ class Visor extends React.Component{
         }
 
         const buttonStyle = {
+            position:'absolute',
             display:'flex',
             justifyContent:'center',
             backgroundColor:'#eee',
-            marginTop:70
+            marginTop:70,
+            bottom:150
         }
 
         return(
