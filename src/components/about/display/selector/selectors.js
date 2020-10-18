@@ -14,7 +14,7 @@ let selectors  = [
     {   
         
         title:'About Me',
-        description:'[Minim] : [Null]',
+        description:'[Human] : [After All]',
         icon: <i class="fas fa-address-card"></i>,
         visor:{
             title: 'Welcome! My Name is Mariano L. Acosta',
@@ -40,7 +40,7 @@ let selectors  = [
     },
     {
         title:'Languages & Frameworks',
-        description:'[Minim] : [Null]',
+        description:'[Id Est] : [Polyglot]',
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
             title: 'Aliquip occaecat fugiat aute id Lorem irure',
@@ -118,7 +118,7 @@ let selectors  = [
     },
     {
         title:'Tools & Abilities',
-        description:'[Minim] : [Null]',
+        description:'[Work Harder] : [Make it Better]',
         icon: <i class="fas fa-tools"></i>,
         visor:{
             title: 'Ipsum commodo tempor ea consectetur aliquip',
@@ -130,7 +130,7 @@ let selectors  = [
     },
     {
         title:'Work Experience',
-        description:'[Minim] : [Null]',
+        description:'[Leave] : [Mark]',
         icon: <i class="fas fa-suitcase"></i>,
         visor:{
             title: 'Anim eiusmod elit excepteur dolor Lorem ut',
@@ -142,7 +142,7 @@ let selectors  = [
     },
     {
         title:'Education',
-        description:'[Minim] : [Null]',
+        description:'[Shoulders] : [Giant]',
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Non sint ex ea ad',
@@ -153,7 +153,7 @@ let selectors  = [
     },
     {
         title:'Hobbies & Interests',
-        description:'[Minim] : [Null]',
+        description:'[Soul Body] : [Ecstasy]',
         icon: <i class="fas fa-gamepad"></i>,
         visor:{
             title: 'Non sint ex ea ad',

@@ -28,13 +28,21 @@ class Visor extends React.Component{
             bottom:80,
         }
 
+        const titleStyle = {
+            color: this.props.colors.text01
+        }
+
+        const descStyle = {
+            color: this.props.colors.text02
+        }
+
         return(
             <div className="Visor">
                 <div className="pic-container">
                     <ProfilePic style={picStyle} />
                 </div>
-                <h2 id='visor-title'>{this.props.title}</h2>
-                <p id='visor-desc'>{this.props.description}</p>
+                <h2 id='visor-title' style={titleStyle}>{this.props.title}</h2>
+                <p id='visor-desc' style={descStyle}>{this.props.description}</p>
                 <Button01 colors={this.props.colors} 
                           msg='Generate CV'
                           style={buttonStyle}/>
