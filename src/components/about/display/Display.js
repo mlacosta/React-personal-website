@@ -42,7 +42,8 @@ class Display extends React.Component{
         const picStyle = {
             height:'90px',
             position: 'absolute',
-            margin:'10px 0 0 30px'
+            margin:'10px 0 0 30px',
+            display:'none'
         }
 
         return(

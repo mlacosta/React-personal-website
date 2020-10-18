@@ -53,7 +53,7 @@ class Name extends React.Component{
                     <h3 id='myName' style={nameStyle}>
                         <Typist cursor={{element:' █',blink:true}}>
                             <Typist.Delay ms={delay3 + 600 + 1000} />
-                            {'Continue: '}
+                            {'Press any key to continue: '}
                         </Typist>
                     </h3>
             </div>

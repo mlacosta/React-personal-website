@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-typist/dist/Typist.css';
 
 function age(dob) { 
     const birth =  new Date(dob);
@@ -20,13 +21,15 @@ let selectors  = [
             description: 
                         <>
                             <p style={{marginBottom:30}}>
-                                I'm a {age('08/13/1993')} years old Engineer from Argentina.
-                                In 2018, I graduated from the <a href='https://www.fi.mdp.edu.ar/' target='_blank'>University of Mar del Plata</a> with an Engineering Degree in Electronics, which is equivalent to a Bachelors + Master degree.
-                                Also, I had the opportunity to be an exchange student at <a href="https://vt.edu/" target='_blank'>Virginia Tech</a> (U.S) with a Fulbright Scholarship.
+                                Born in 1993, I'm a {age('08/13/1993')} years old Engineer from Argentina.
+                                In 2018, I graduated from the <a href='https://www.fi.mdp.edu.ar/' target='_blank'>University of Mar del Plata </a> 
+                                with an Engineering Degree in Electronics, which is equivalent to a Bachelors + Master degree.
+                                Also, I had the opportunity to be an exchange student at <a href="https://vt.edu/" target='_blank'>Virginia Tech</a> (U.S)
+                                 with a Fulbright Scholarship.
                             </p>
                             <p style={{marginBottom:30}}>
                                 {`During my career, I've worked in a variety of fields, ranging from Avionics Systems, Power Electronics, Embedded Systems,
-                                Machine Learning, Signal Processing and Fullstack Web Development.` }
+                                Machine Learning, Signal Processing and Full-Stack Development.` }
                             </p>
                             <p style={{marginBottom:30}}>
                                 {`Recently, in 2020, I've decided to go all-in with Computer Science and Software Engineering.
@@ -140,7 +143,7 @@ let selectors  = [
     {
         title:'Education',
         description:'[Minim] : [Null]',
-        icon: <i class="fas fa-book"></i>,
+        icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Non sint ex ea ad',
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
@@ -151,7 +154,7 @@ let selectors  = [
     {
         title:'Hobbies & Interests',
         description:'[Minim] : [Null]',
-        icon: <i class="fas fa-book"></i>,
+        icon: <i class="fas fa-gamepad"></i>,
         visor:{
             title: 'Non sint ex ea ad',
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 

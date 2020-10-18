@@ -50,8 +50,8 @@
 }
 
 #box-description{
-    font-size: 300;
     margin:0;    
+    font-size:.8rem;
 }
 
 .item-container{
