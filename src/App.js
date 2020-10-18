@@ -6,6 +6,7 @@ import Particles from 'react-particles-js';
 import themes from './themes/themes';
 import AtomBar from './components/animated/atom';
 import Display from './components/about/display/Display';
+import PageContainer from './components/misc/pageContainer/PageContainer'
 
 import links from './links';
 
@@ -30,13 +31,7 @@ class App extends React.Component {
   }
 
   render(){
-    let pageStyle = {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%"
-    }
+
 
     const body = document.getElementsByTagName("BODY")[0];
     body.setAttribute("style", `background-color: ${this.state.colorPalette.background}`);
@@ -64,8 +59,7 @@ class App extends React.Component {
            }
           }
         />
-        <div style={pageStyle} className="page" >
-          
+        <PageContainer>
           <MainBox 
             colorPalette = {this.state.colorPalette} 
             contact = {links} 
@@ -73,7 +67,9 @@ class App extends React.Component {
             height = {this.state.height}></MainBox>
           <AtomBar/>
           <Display colors = {this.state.colorPalette}/>
-        </div>
+        </PageContainer>
+
+
       </div>
     );
   }

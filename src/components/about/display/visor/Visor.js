@@ -1,8 +1,7 @@
 import React from 'react';
 import ProfilePic from '../../../profilePic/profilePic';
 import '../../../profilePic/profilePic';
-import '../../../misc/Button01';
-import Button01 from '../../../misc/Button01';
+import Button01 from '../../../misc/button01/Button01';
 import './Visor.css';
 import Display from '../Display';
 import Typist from 'react-typist';
