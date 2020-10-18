@@ -1,17 +1,27 @@
 import React from 'react';
 
+function age(dob) { 
+    const birth =  new Date(dob);
+    let diff_ms = Date.now() - birth.getTime();
+    let age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+
 let selectors  = [
-    {
+    {   
+        
         title:'About Me',
         description:'[Minim] : [Null]',
         icon: <i class="fas fa-address-card"></i>,
         visor:{
-            title: 'Adipisicing veniam ex in dolore culpa enim ',
-            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'+
-                        ' Cillum duis dolor est Lorem fugiat amet sint reprehenderit.'
+            title: 'Welcome! My Name is Mariano L. Acosta',
+            description:`I'm a ${age('08/13/1993')} years old Engineer from Argentina.
+            In 2018, I graduated from the National University of Mar del Plata with an Engineering Degree in Electronics, which is equivalent to a Bachelors + Master degree.
+            Also, in 2017 I had the opportunity to be an exchange student at Virginia Tech, U.S, with a Fulbright Scholarship.
+            Recently in 2020, I've decided to go all-in with Computer Science and Software Engineering.
+            I've been in love with computers and mathemathics since I was in kindergarden, so this career change felt only natural`
         }
     },
     {
@@ -93,7 +103,7 @@ let selectors  = [
         }
     },
     {
-        title:'Tools',
+        title:'Tools & Abilities',
         description:'[Minim] : [Null]',
         icon: <i class="fas fa-tools"></i>,
         visor:{
@@ -105,9 +115,9 @@ let selectors  = [
         }
     },
     {
-        title:'Abilities',
+        title:'Work Experience',
         description:'[Minim] : [Null]',
-        icon: <i class="fas fa-star-half-alt"></i>,
+        icon: <i class="fas fa-suitcase"></i>,
         visor:{
             title: 'Anim eiusmod elit excepteur dolor Lorem ut',
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
@@ -117,9 +127,20 @@ let selectors  = [
         }
     },
     {
+        title:'Education',
+        description:'[Minim] : [Null]',
+        icon: <i class="fas fa-book"></i>,
+        visor:{
+            title: 'Non sint ex ea ad',
+            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
+                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
+                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'
+        }
+    },
+    {
         title:'Hobbies & Interests',
         description:'[Minim] : [Null]',
-        icon: <i class="fas fa-laptop-code"></i>,
+        icon: <i class="fas fa-book"></i>,
         visor:{
             title: 'Non sint ex ea ad',
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 

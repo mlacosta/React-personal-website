@@ -6,7 +6,7 @@ import './profilePic.css';
 class ProfilePic extends React.Component{
     render(){
 
-        return (<img id='profilePic' 
+        return (<img id='profilePic' class = 'pic'
                         src ={picture} 
                         style ={this.props.style}>    
                 </img>);

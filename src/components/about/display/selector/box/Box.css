@@ -6,6 +6,7 @@
     border-width: 1px 0;
     border-style: solid;
     transition-duration: .7s;
+    cursor: pointer;
 }
 
 .Box:hover{
