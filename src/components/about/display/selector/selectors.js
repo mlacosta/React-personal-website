@@ -1,6 +1,8 @@
 import React from 'react';
-import 'react-typist/dist/Typist.css';
-import Menu from '../../menu/menu';
+
+import tools from './info/tools';
+import work from './info/work';
+import education from './info/education';
 
 function age(dob) { 
     const birth =  new Date(dob);
@@ -8,99 +10,7 @@ function age(dob) {
     let age_dt = new Date(diff_ms); 
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
-
-
-const languages = [
-                    {name: 'Full-Stack Development',
-                    title: 'Nisi ex ut proident',
-                    description:'Occaecat laborum laboris',
-                    content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
-                    },
-                    {name: 'Machine Learning',
-                    content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
-                    title: 'Reprehenderit labore duis',
-                    description:'Occaecat laborum laboris',
-                    },
-                    {name: 'Embedded Systems',
-                    content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                    title: 'Et anim sunt magna tempor',
-                    description:'Occaecat laborum laboris',
-                    },
-                    {name: 'Electronics',
-                    content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                    title: 'Non commodo ullamco dolore',
-                    description:'Occaecat laborum laboris',
-                    }
-                    ,
-                    {name: 'Music Production',
-                    content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                    title: 'Non commodo ullamco dolore',
-                    description:'Occaecat laborum laboris',
-                    }
-                ]
-                        
-const work = [
-                {name: 'Coderhouse',
-                title: 'React JS Teacher',
-                description:'August 2020 - Present',
-                content: ['Javascript (ES6)','React.js','Node.js','Express.js']
-                },
-                {name: 'Lyrtron S.A',
-                content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
-                title: 'Power Electronics Engineer',
-                description:'September 2018 - April 2019',
-                },
-                {name: 'ICyTE',
-                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                title: 'Embedded Systems Engineer',
-                description:'Occaecat laborum laboris',
-                },
-                {name: 'INVAP S.E',
-                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                title: 'Avionics Engineer (Internship)',
-                description:'January 2016 - March 2016',
-                },
-                {name: 'UNMDP',
-                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                title: 'Professor in Experimental Physics',
-                description:'November 2014 – November 2017',
-                },
-            ]
-
-const education = [
-                {name: 'UNMDP',
-                title: 'Degree in Electronics Engineering',
-                description:'April 2012 - August 2018',
-                content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
-                },
-                {name: 'Virginia Tech (U.S)',
-                content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
-                title: 'Exchange Student - Fulbright Scholarship',
-                description:'January 2017 - March 2017',
-                },
-                {name: 'ICTP (Italy)',
-                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                title: 'Advanced School on Systems On Chip',
-                description:'November 2017 - Dicember 2017',
-                },
-                {name: 'Codecademy',
-                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                title: 'Full-Stack Engineer Career Path',
-                description:'May 2020 - Ongoing',
-                },
-                {name: 'Stanford Online',
-                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                title: 'Algorithms Specialization',
-                description:'June 2020 - November 20',
-                },
-                {name: 'DeepLearning.io',
-                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                title: 'Deep Learning Specialization',
-                description:'June 2020 - November 20',
-                }
-            ]
-
-
+        
 const selectors  = [
     {   
         
@@ -142,7 +52,7 @@ const selectors  = [
             description: undefined,
             menu:{
                 isValid: true,
-                content: languages
+                content: tools
             }
         }
     },
