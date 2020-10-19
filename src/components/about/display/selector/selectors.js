@@ -11,32 +11,82 @@ function age(dob) {
 }
 
 
-let languages = [
-                 {name: 'Full-Stack Development',
-                 title: 'Nisi ex ut minim proident sunt',
-                 description:'Occaecat laborum laboris',
-                 content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
-                 },
-                 {name: 'Machine Learning',
-                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
-                 title: 'Reprehenderit labore duis culpa',
-                 description:'Occaecat laborum laboris',
-                 },
-                 {name: 'Embedded Systems',
-                 content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                 title: 'Et anim sunt magna tempor',
-                 description:'Occaecat laborum laboris',
-                 },
-                 {name: 'Electronics',
-                 content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                 title: 'Non commodo ullamco dolore',
-                 description:'Occaecat laborum laboris',
-                 }
+const languages = [
+                    {name: 'Full-Stack Development',
+                    title: 'Nisi ex ut proident',
+                    description:'Occaecat laborum laboris',
+                    content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+                    },
+                    {name: 'Machine Learning',
+                    content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
+                    title: 'Reprehenderit labore duis',
+                    description:'Occaecat laborum laboris',
+                    },
+                    {name: 'Embedded Systems',
+                    content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
+                    title: 'Et anim sunt magna tempor',
+                    description:'Occaecat laborum laboris',
+                    },
+                    {name: 'Electronics',
+                    content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                    title: 'Non commodo ullamco dolore',
+                    description:'Occaecat laborum laboris',
+                    }
                 ]
-                               
+                        
+const work = [
+                {name: 'Coderhouse',
+                title: 'React JS Teacher',
+                description:'August 2020 - Present',
+                content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+                },
+                {name: 'Lyrtron S.A',
+                content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
+                title: 'Power Electronics Engineer',
+                description:'September 2018 - April 2019',
+                },
+                {name: 'ICyTE',
+                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
+                title: 'Embedded Systems Engineer',
+                description:'Occaecat laborum laboris',
+                },
+                {name: 'INVAP S.E',
+                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                title: 'Avionics Engineer (Internship)',
+                description:'January 2016 - March 2016',
+                },
+                {name: 'UNMDP',
+                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
+                title: 'Professor in Experimental Physics',
+                description:'November 2014 – November 2017',
+                },
+            ]
+
+const education = [
+                {name: 'U.N.M.D.P',
+                title: 'Electronics Engineer',
+                description:'August 2020 - Present',
+                content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+                },
+                {name: 'Virginia Tech',
+                content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
+                title: 'Exchange Student - Fulbright Scholarship',
+                description:'September 2018 - April 2019',
+                },
+                {name: 'ICyTE',
+                content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
+                title: 'Embedded Systems Engineer',
+                description:'Occaecat laborum laboris',
+                },
+                {name: 'INVAP S.E',
+                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                title: 'Avionics Engineer (Internship)',
+                description:'January 2016 - March 2016',
+                }
+            ]
 
 
-let selectors  = [
+const selectors  = [
     {   
         
         title:'About Me',
@@ -90,12 +140,8 @@ let selectors  = [
         description:'', //'[Leave] : [Mark]',
         icon: <i class="fas fa-suitcase"></i>,
         visor:{
-            title: 'Anim eiusmod elit excepteur dolor Lorem ut',
-            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'
-        }
+            title: `Places where I've Worked`,
+            description:< Menu content = {work}/>}
     },
     {
         title:'Education',
@@ -103,10 +149,7 @@ let selectors  = [
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Aliqua occaecat est cillum.',
-            description:`Incididunt nisi sint eu exercitation veniam. Nulla cillum et nisi amet est mollit nostrud 
-                         consequat elit ex laborum et pariatur voluptate. Id adipisicing excepteur aliquip consectetur 
-                        labore eiusmod mollit ipsum laborum commodo fugiat.`
-        }
+            description:< Menu content = {education}/>}
     },
     {
         title:'Hobbies & Interests',
