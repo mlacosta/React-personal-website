@@ -13,7 +13,6 @@ function age(dob) {
         
 const selectors  = [
     {   
-        
         title:'About Me',
         description:'', //'[Human] : [After All]',
         icon: <i class="fas fa-address-card"></i>,
@@ -88,10 +87,10 @@ const selectors  = [
         icon: <i class="fas fa-award"></i>,
         visor:{
             title: 'Ipsum commodo tempor ea consectetur aliquip',
-            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.',
+            description:`Do exercitation qui cillum irure ex qui. Anim pariatur.
+                        Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.
+                        Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.
+                        Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.` ,
             menu:{
                 isValid: false,
                 content: undefined
