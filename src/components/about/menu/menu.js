@@ -19,7 +19,6 @@ class Menu extends React.Component{
     handleSelect(name){
         return ()=>{
             let index  = this.props.content.findIndex((value)=>{return name === value.name});
-            index = (index === -1) ? 0 : index;
             this.setState({
                 elements: this.props.content.map((value)=>{return value.name}),
                 currentElement:name,
@@ -29,6 +28,15 @@ class Menu extends React.Component{
             });
         }
 
+    }
+    componentWillReceiveProps(nextProps) {
+        this.state = {
+            elements: nextProps.content.map((value)=>{return value.name}),
+            items:nextProps.content[0].content,
+            currentElement:nextProps.content[0].name,
+            title: nextProps.content[0].title ,
+            description: nextProps.content[0].description ,
+        }
     }
 
     render(){
