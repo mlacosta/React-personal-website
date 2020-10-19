@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './list/List';
 import ItemList from './ItemList/ItemList';
-
+import './menu.css'
 
 class Menu extends React.Component{
     constructor(props){
@@ -19,7 +19,9 @@ class Menu extends React.Component{
     handleSelect(name){
         return ()=>{
             let index  = this.props.content.findIndex((value)=>{return name === value.name});
+            index = (index === -1) ? 0 : index;
             this.setState({
+                elements: this.props.content.map((value)=>{return value.name}),
                 currentElement:name,
                 items:this.props.content[index].content,
                 title:this.props.content[index].title,
@@ -33,7 +35,7 @@ class Menu extends React.Component{
         let style = {
             display:'flex',
             justifyContent:'Space Around',
-            marginTop:100
+            marginTop:50
         }
         return(
             <div id ='menu-container' style = {style}>

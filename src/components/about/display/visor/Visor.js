@@ -9,6 +9,10 @@ import 'react-typist/dist/Typist.css';
 
 class Visor extends React.Component{
 
+    constructor(props){
+        super(props);
+    }
+
     render(){
 
         const picStyle = {

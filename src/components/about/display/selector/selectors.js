@@ -37,7 +37,7 @@ const work = [
                 {name: 'Coderhouse',
                 title: 'React JS Teacher',
                 description:'August 2020 - Present',
-                content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+                content: ['Javascript (ES6)','React.js','Node.js','Express.js']
                 },
                 {name: 'Lyrtron S.A',
                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
@@ -63,24 +63,34 @@ const work = [
 
 const education = [
                 {name: 'UNMDP',
-                title: 'Electronics Engineer',
-                description:'August 2020 - Present',
+                title: 'Degree in Electronics Engineering',
+                description:'April 2012 - August 2018',
                 content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
                 },
-                {name: 'Virginia Tech',
+                {name: 'Virginia Tech (U.S)',
                 content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
                 title: 'Exchange Student - Fulbright Scholarship',
-                description:'September 2018 - April 2019',
+                description:'January 2017 - March 2017',
                 },
-                {name: 'ICyTE',
+                {name: 'ICTP (Italy)',
                 content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],
-                title: 'Embedded Systems Engineer',
-                description:'Occaecat laborum laboris',
+                title: 'Advanced School on Systems On Chip',
+                description:'November 2017 - Dicember 2017',
                 },
-                {name: 'INVAP S.E',
+                {name: 'Codecademy',
                 content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
-                title: 'Avionics Engineer (Internship)',
-                description:'January 2016 - March 2016',
+                title: 'Full-Stack Engineer Career Path',
+                description:'May 2020 - Ongoing',
+                },
+                {name: 'Stanford Online',
+                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                title: 'Algorithms Specialization',
+                description:'June 2020 - November 20',
+                },
+                {name: 'DeepLearning.io',
+                content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                title: 'Deep Learning Specialization',
+                description:'June 2020 - November 20',
                 }
             ]
 
@@ -114,24 +124,16 @@ const selectors  = [
         }
     },
     {
-        title:'Languages & Frameworks',
+        title:'Tools & Abilities',
         description:'', //'[Id Est] : [Polyglot]',
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
             title: 'Select one field:',
-            description: <Menu content = {languages}/>
-        }
-    },
-    {
-        title:'Tools & Abilities',
-        description:'', //[Work Harder] : [Make it Better]',
-        icon: <i class="fas fa-tools"></i>,
-        visor:{
-            title: 'Ipsum commodo tempor ea consectetur aliquip',
-            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'
+            description: <Menu content = {languages}/>,
+            menu:{
+                isValid: true,
+                content: languages
+            }
         }
     },
     {
@@ -140,7 +142,12 @@ const selectors  = [
         icon: <i class="fas fa-suitcase"></i>,
         visor:{
             title: `Places where I've Worked`,
-            description:< Menu content = {work}/>}
+            description:< Menu content = {work}/>,
+            menu:{
+                isValid: true,
+                content: work
+            }
+        }
     },
     {
         title:'Education',
@@ -148,7 +155,24 @@ const selectors  = [
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Aliqua occaecat est cillum.',
-            description:< Menu content = {education}/>}
+            description:< Menu content = {education}/>,
+            menu:{
+                isValid: true,
+                content: education
+            }
+        }
+    },
+    {
+        title:'Papers & Awards',
+        description:'', //[Work Harder] : [Make it Better]',
+        icon: <i class="fas fa-award"></i>,
+        visor:{
+            title: 'Ipsum commodo tempor ea consectetur aliquip',
+            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
+                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
+                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
+                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'
+        }
     },
     {
         title:'Hobbies & Interests',
