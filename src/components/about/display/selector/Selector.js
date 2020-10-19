@@ -1,7 +1,6 @@
 import React from 'react';
 import './Selector.css';
 import Box from './box/Box';
-import selectors from './selectors'
 
 
 class Selector extends React.Component{
@@ -18,7 +17,7 @@ class Selector extends React.Component{
 
         return(
             <div className="Selector" style={styles}>
-                {selectors.map(
+                {this.props.selectors.map(
                     select =>{
                         return(<Box colors = {colors}
                                     title = {select.title}

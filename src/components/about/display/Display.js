@@ -11,6 +11,7 @@ class Display extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            selectors:selectors,
             currentBox: selectors[0].title,
             visor:{
                 title: selectors[0].visor.title,
@@ -54,12 +55,14 @@ class Display extends React.Component{
                 <ProfilePic style={picStyle} layerColor = {this.props.colors.background}/> 
                 <Selector colors={this.props.colors} 
                           onHover={this.handleHover}
+                          selectors={this.state.selectors}
                           currentBox={this.state.currentBox}/>
                 <Visor 
                     colors={this.props.colors}
                     title = {this.state.visor.title}
                     description = {this.state.visor.description}
                     menu = {this.state.visor.menu}
+                    currentBox={this.state.currentBox}
                 />
             </div>
         )
