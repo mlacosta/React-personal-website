@@ -27,7 +27,12 @@ class Box extends React.Component{
         }
 
         return(
-            <div className="Box" style = {boxStyle} onMouseOver = {this.props.onHover(this.props.title,this.props.visor.title,this.props.visor.description)}>
+            <div className="Box" 
+                 style = {boxStyle} 
+                 onMouseOver = {this.props.onHover(this.props.title,
+                                                   this.props.visor.title,
+                                                   this.props.visor.description,
+                                                   this.props.visor.menu)}>
                 <div className="icon">{icon}</div>
                 
                 <div className="box-container">

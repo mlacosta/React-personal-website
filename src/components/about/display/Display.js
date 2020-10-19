@@ -14,7 +14,8 @@ class Display extends React.Component{
             currentBox: selectors[0].title,
             visor:{
                 title: selectors[0].visor.title,
-                description:selectors[0].visor.description
+                description:selectors[0].visor.description,
+                menu:selectors[0].visor.menu
             },
             boxes: selectors.map((value)=>{return value.title}),
             
@@ -22,13 +23,14 @@ class Display extends React.Component{
         this.handleHover = this.handleHover.bind(this);
     }
 
-    handleHover(boxTitle,title,description){
+    handleHover(boxTitle,title,description,menu){
         return ()=>{
             this.setState({
                 currentBox: boxTitle,
                 visor:{
                     title,
-                    description
+                    description,
+                    menu
                 }
             })
         }
@@ -57,6 +59,7 @@ class Display extends React.Component{
                     colors={this.props.colors}
                     title = {this.state.visor.title}
                     description = {this.state.visor.description}
+                    menu = {this.state.visor.menu}
                 />
             </div>
         )

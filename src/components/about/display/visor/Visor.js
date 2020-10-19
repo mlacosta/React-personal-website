@@ -6,6 +6,7 @@ import './Visor.css';
 import Display from '../Display';
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
+import Menu from '../../menu/menu';
 
 class Visor extends React.Component{
 
@@ -40,13 +41,19 @@ class Visor extends React.Component{
             color: this.props.colors.text02
         }
 
+        let hasMenu = this.props.menu.isValid;
+
+        let renderP = <p id='visor-desc' style={descStyle}>{this.props.description}</p>
+
+        let render = hasMenu ? < Menu content = {this.props.menu.content}/> : renderP;
+
         return(
             <div className="Visor">
                 <div className="pic-container">
                     <ProfilePic style={picStyle} />
                 </div>
                 <h2 id='visor-title' style={titleStyle}>{this.props.title}</h2>
-                <p id='visor-desc' style={descStyle}>{this.props.description}</p>
+                {render}
                 <Button01 colors={this.props.colors} 
                           msg='Generate CV'
                           style={buttonStyle}/>

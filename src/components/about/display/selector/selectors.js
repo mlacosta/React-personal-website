@@ -126,7 +126,11 @@ const selectors  = [
                                 {`Recently, in 2020, I've decided to go all-in with Computer Science and Software Engineering.
                                 I've been in love with computers and mathemathics since I was in kindergarden, so this career change felt only natural.` }
                             </p>
-                        </>
+                        </>,
+            menu:{
+                isValid: false,
+                content: undefined
+            }
         }
     },
     {
@@ -135,7 +139,7 @@ const selectors  = [
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
             title: 'Select one field:',
-            description: <Menu content = {languages}/>,
+            description: undefined,
             menu:{
                 isValid: true,
                 content: languages
@@ -148,7 +152,7 @@ const selectors  = [
         icon: <i class="fas fa-suitcase"></i>,
         visor:{
             title: `Places where I've Worked`,
-            description:< Menu content = {work}/>,
+            description:undefined,
             menu:{
                 isValid: true,
                 content: work
@@ -161,7 +165,7 @@ const selectors  = [
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
             title: 'Aliqua occaecat est cillum.',
-            description:< Menu content = {education}/>,
+            description:undefined,
             menu:{
                 isValid: true,
                 content: education
@@ -177,7 +181,11 @@ const selectors  = [
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
                         'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
                         ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'+
-                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.'
+                        ' Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.',
+            menu:{
+                isValid: false,
+                content: undefined
+            }
         }
     },
     {
@@ -188,7 +196,11 @@ const selectors  = [
             title: 'Non sint ex ea ad',
             description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
                         'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.'
+                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.',
+            menu:{
+                isValid: false,
+                content: undefined
+            }
         }
     },
 
