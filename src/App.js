@@ -36,13 +36,13 @@ class App extends React.Component {
 
     window.addEventListener('resize', this.handleResize);
 
-    const particleStyle = (this.state.colorPalette.name === 'no end') ? {
+    const particleStyle = ((this.state.colorPalette.name === 'no end') || (this.state.colorPalette.name === 'indo silver club'))? {
         particles:{
           color: {
-            value: this.state.colorPalette.text02
+            value: '#20a9b1'
           },
           "line_linked": {
-            color:this.state.colorPalette.text02
+            color:'#20a9b1'
           }
         }
       } : {

@@ -31,6 +31,12 @@ const languages = [
                     title: 'Non commodo ullamco dolore',
                     description:'Occaecat laborum laboris',
                     }
+                    ,
+                    {name: 'Music Production',
+                    content: ['Control Systems','PCB Design','Power Systems','DSP ','Matlab','NL5/Spice'],
+                    title: 'Non commodo ullamco dolore',
+                    description:'Occaecat laborum laboris',
+                    }
                 ]
                         
 const work = [
