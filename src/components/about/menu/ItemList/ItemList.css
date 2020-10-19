@@ -3,8 +3,23 @@
     flex-direction: column;
     justify-content: center;
     font-weight: 300;
+    font-size: .85rem;
 }
 
 .itemlist-container{
-    width: 300px;
+    width: 350px;
+    text-align: justify;
 }
+
+.list-item{
+    list-style: none; 
+    margin: 7px ;
+}
+
+.list-item::before{  
+    content: "\02C3";
+    font-size: 1.1rem; 
+    font-weight: 700;
+    margin-left: -21px;
+    margin-right: 10px;
+} 
