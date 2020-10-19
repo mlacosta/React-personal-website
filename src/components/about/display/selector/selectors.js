@@ -6,7 +6,6 @@ function age(dob) {
     const birth =  new Date(dob);
     let diff_ms = Date.now() - birth.getTime();
     let age_dt = new Date(diff_ms); 
-  
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
@@ -63,7 +62,7 @@ const work = [
             ]
 
 const education = [
-                {name: 'U.N.M.D.P',
+                {name: 'UNMDP',
                 title: 'Electronics Engineer',
                 description:'August 2020 - Present',
                 content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
