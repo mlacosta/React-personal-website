@@ -2,19 +2,16 @@ import React from 'react';
 import './debug-window.css';
 
 
-class DebugWindow extends React.Component{
+function DebugWindow ({width,height,name}){
 
-    render(){
-
-        return(
-            <div className="DebugWindow">
-                <span id='debug-title'>Debug mode</span><br/>
-                x-coor: {this.props.width} <br/>
-                y-coor: {this.props.height} <br/>
-                theme: {this.props.name}
-            </div>
-        )
-    }
+    return(
+        <div className="DebugWindow">
+            <span id='debug-title'>Debug mode</span><br/>
+            x-coor: {width} <br/>
+            y-coor: {height} <br/>
+            theme: {name}
+        </div>
+    )
 
 }
 
