@@ -6,7 +6,6 @@ import DebugWindow from '../../debug-window/debug-window';
 
 import './mainBox.css'
 
-
 function MainBox ({ colors, contact, width, height}){
         
     let color = colors;
@@ -22,7 +21,7 @@ function MainBox ({ colors, contact, width, height}){
 
     return(
         <div className="landing">
-            <div className='MainBox' style={style}>
+            <div className='MainBox' {...{style}}>
                 <span id='cursor'>{'>'}</span>
                 <DebugWindow {...debug}/>     
                 <Name {...name}/>
