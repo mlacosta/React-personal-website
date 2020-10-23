@@ -8,9 +8,8 @@ import selectors from '../display/selector/selectors';
 class Display extends React.Component{
 
     constructor(props){
-
         super(props);
-
+        
         let {title, description, menu} = selectors[0].visor;
 
         this.state = {
@@ -41,16 +40,13 @@ class Display extends React.Component{
         }
 
         let { selectors, currentBox, visor } = this.state;
+        let selector = { colors, selectors, currentBox };
+        let visorProp = {colors, visor, currentBox};
 
         return(
             <div className="display" style = {style}>
-                <Selector colors = {colors} 
-                          onHover = {this.handleHover}
-                          selectors = {selectors}
-                          currentBox = {currentBox}/>
-                <Visor colors = {colors}
-                       visor = {visor}
-                       currentBox = {currentBox}/>
+                <Selector onHover = {this.handleHover} {...selector}/>
+                <Visor {...visorProp}/>
             </div>
         )
     }
