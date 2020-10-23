@@ -5,6 +5,7 @@ import Visor from './visor/Visor';
 import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
 
+
 class Display extends React.Component{
 
     constructor(props){
@@ -28,7 +29,6 @@ class Display extends React.Component{
 
     render(){
         let { colors } = this.props;
-
         let style = {
             border: `1px solid ${colors.border}`,
             color: colors.text02

@@ -3,6 +3,7 @@ import Button01 from '../../../misc/button01/Button01';
 import './Visor.css';
 import 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
+import CV from '../../../../documents/CV_Mariano_L_Acosta.pdf';
 
 const buttonStyle = {
     position:'absolute',
@@ -21,13 +22,13 @@ export default function Visor({colors, visor}) {
     let { title, description, menu } = visor;
     let hasMenu = menu.isValid;
     let renderP = <p id='visor-desc' style={descStyle}>{description}</p>
-    let render = hasMenu ? < Menu content = {menu.content}/> : renderP;
+    let render = hasMenu ? < Menu content = {menu.content} {...colors}/> : renderP;
 
     return(
         <div className="Visor">
             <h2 id='visor-title' style={titleStyle}>{title}</h2>
             {render}
-            <Button01 {...{colors}} msg='Generate CV'style={buttonStyle}/>
+            <Button01 {...{colors}} msg='Generate CV'style={buttonStyle} source={CV}/>
         </div>
     );
 

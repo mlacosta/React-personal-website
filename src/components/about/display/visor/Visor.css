@@ -1,11 +1,12 @@
 .Visor{
     display: flexbox;
     position: absolute;
-    width: 45%;
+    width: 50%;
     right: 0;
     height: 90%;
     flex-direction: column;
     margin: 20px;
+    margin-top: 40px;
     padding-right: 30px;
     line-height: 1.6rem;
 }

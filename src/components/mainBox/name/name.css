@@ -1,0 +1,58 @@
+.Name {
+    text-align: left;
+    font-size: 1.7rem;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+#myName {
+    font-weight: 300;
+}
+
+#profession{
+    line-height: 14px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 932px) {
+    .Name {
+
+        font-size: 1.2rem;
+        margin: 100px 5%;
+    }
+    
+    #profession{
+        padding-top: 20px;
+        line-height: 14px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .Name{
+        font-size: .9rem;
+    }
+    #profession{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Name {
+        margin: 150px 5%;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .Name{
+        font-size: .7rem;
+    }
+    #profession{
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-height: 450px) {
+    .Name{
+        margin-top: 50px;
+    }
+
+}

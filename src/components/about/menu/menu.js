@@ -37,10 +37,11 @@ export default class Menu extends Component{
     render(){
         let {items, title, description, current ,elements} = this.state;
         let itemProps = {items, title, description}
+        let colors = this.props.colors;
 
         return(
             <div id ='menu-container' style = {style}>
-                <List {...{elements,current}} onClick={this.handleSelect}/>
+                <List {...{elements,current,colors}} onClick={this.handleSelect}/>
                 <ItemList {...itemProps}/>
             </div>
         );

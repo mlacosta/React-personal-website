@@ -1,0 +1,21 @@
+.DebugWindow{
+    position: absolute;
+    right: 5%;
+    top: 50px;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+#debug-title{
+    padding-bottom: 100px;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .DebugWindow{
+        top: 30px;
+        font-size: .7rem;
+    }
+
+}

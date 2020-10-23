@@ -1,13 +1,18 @@
 const education = [
     {name: 'UNMDP',
     title: 'Degree in Electronics Engineering',
-    description:'April 2012 - August 2018',
-    content: ['Javascript (ES6)','React.js','Node.js','Express.js','HTML & CSS','Mocha & Chai','SQLite','MongoDB','TCP/IP stack','REST/CRUD servers']
+    description:'2012 - 2018',
+    content: ['Coursework: Control Systems, Electronics Instrumentation, Signal Processing, Circuit Design, Communications & Data Networks',
+            'Additional courses: Computational Intelligence, Applied Robotics, Operations Research, FPGA Design, Microcontrollers.'],
+    showTitle:true
     },
     {name: 'Virginia Tech (U.S)',
-    content: ['Python','Tensorflow','Keras','Numpy','Pandas','Scikit-Learn'],
-    title: 'Exchange Student - Fulbright Scholarship',
-    description:'January 2017 - March 2017',
+    title: 'Fulbright Scholarship - Exchange Student',
+    description:'2017 - 2017',
+    content: ['Intensive, 200hs English course at VTLCI ','Attended to university courses in Electrical and Computer Engineering',
+             'Did several field trips, visited the US Department of State, the Inter-American Development Bank, the US congress and Museums in D.C.',
+             'Lived on campus and shared experiences with students from all around the world.'],
+    showTitle:true
     },
     {name: 'ICTP (Italy)',
     content: ['C/C++','React.js','VHDL', 'RTOS','Xilinx/HLS'],

@@ -56,19 +56,6 @@ const selectors  = [
         }
     },
     {
-        title:'Work Experience',
-        description:'', //'[Leave] : [Mark]',
-        icon: <i class="fas fa-suitcase"></i>,
-        visor:{
-            title: `Places where I've Worked`,
-            description:undefined,
-            menu:{
-                isValid: true,
-                content: work
-            }
-        }
-    },
-    {
         title:'Education',
         description:'', //'[Shoulders] : [Giant]',
         icon: <i class="fas fa-graduation-cap"></i>,
@@ -78,6 +65,19 @@ const selectors  = [
             menu:{
                 isValid: true,
                 content: education
+            }
+        }
+    },
+    {
+        title:'Work Experience',
+        description:'', //'[Leave] : [Mark]',
+        icon: <i class="fas fa-suitcase"></i>,
+        visor:{
+            title: `Places where I've Worked`,
+            description:undefined,
+            menu:{
+                isValid: true,
+                content: work
             }
         }
     },
