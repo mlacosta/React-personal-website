@@ -9,7 +9,9 @@ import selectors from '../display/selector/selectors'
 class Display extends React.Component{
 
     constructor(props){
+
         super(props);
+
         this.state = {
             selectors:selectors,
             currentBox: selectors[0].title,
@@ -21,10 +23,11 @@ class Display extends React.Component{
             boxes: selectors.map((value)=>{return value.title}),
             
         }
+
         this.handleHover = this.handleHover.bind(this);
     }
 
-    handleHover(boxTitle,title,description,menu){
+    handleHover( boxTitle, title, description , menu){
         return ()=>{
             this.setState({
                 currentBox: boxTitle,
@@ -37,10 +40,14 @@ class Display extends React.Component{
         }
     }
 
+    
     render(){
+
+        let { colors } = this.props;
+
         let style = {
-            border: `1px solid ${this.props.colors.border}`,
-            color: this.props.colors.text02
+            border: `1px solid ${colors.border}`,
+            color: colors.text02
         };
 
         const picStyle = {
@@ -52,13 +59,13 @@ class Display extends React.Component{
 
         return(
             <div className="display" style = {style}>
-                <ProfilePic style={picStyle} layerColor = {this.props.colors.background}/> 
-                <Selector colors={this.props.colors} 
+                <ProfilePic style={picStyle} layerColor = {colors.background}/> 
+                <Selector colors={colors} 
                           onHover={this.handleHover}
                           selectors={this.state.selectors}
                           currentBox={this.state.currentBox}/>
                 <Visor 
-                    colors={this.props.colors}
+                    colors={colors}
                     title = {this.state.visor.title}
                     description = {this.state.visor.description}
                     menu = {this.state.visor.menu}

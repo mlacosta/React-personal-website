@@ -60,7 +60,7 @@ class App extends React.Component {
         />
         <PageContainer>
           <MainBox 
-            colorPalette = {this.state.colorPalette} 
+            colors = {this.state.colorPalette} 
             contact = {links} 
             width = {this.state.width} 
             height = {this.state.height}>

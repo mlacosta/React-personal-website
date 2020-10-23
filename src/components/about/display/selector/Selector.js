@@ -3,35 +3,27 @@ import './Selector.css';
 import Box from './box/Box';
 
 
-class Selector extends React.Component{
+function Selector ({ colors , onHover , selectors, currentBox } ) {
 
-    render(){
-
-        const colors = this.props.colors;
-
-        let styles = {
-            borderColor: colors.border
-        }
-
-        let onHover =  this.props.onHover;
-
-        return(
-            <div className="Selector" style={styles}>
-                {this.props.selectors.map(
-                    select =>{
-                        return(<Box colors = {colors}
-                                    title = {select.title}
-                                    description = {select.description}
-                                    icon = {select.icon}
-                                    visor  = {select.visor}
-                                    highlight = {(select.title === this.props.currentBox) ? true : false}
-                                    onHover = {onHover}/>)
-                    })
-                }
-            </div>
-        )
-
+    let styles = {
+        borderColor: colors.border
     }
+
+    return(
+        <div className="Selector" style={styles}>
+            {selectors.map(
+                select =>{
+                    return(<Box colors = {colors}
+                                title = {select.title}
+                                description = {select.description}
+                                icon = {select.icon}
+                                visor  = {select.visor}
+                                highlight = {(select.title === currentBox) ? true : false}
+                                onHover = {onHover}/>)
+                })
+            }
+        </div>
+    )
 
 }
 

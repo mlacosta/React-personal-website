@@ -3,10 +3,10 @@ import packageJson from '../../../../../package.json';
 import './version.css';
 
 
-function Version({colorPalette,link}){
+function Version({colors,link}){
     
     let ver = packageJson["version"];
-    let color = colorPalette.text01;
+    let color = colors.text01;
 
     return(
         <span id="version" >

@@ -4,12 +4,11 @@ import './name.css'
 import 'react-typist/dist/Typist.css';
 
 
-function Name(props){
-    const myName =  props.width > 700 ? 'Mariano L. Acosta ' : 'Mariano Acosta ' ;
+function Name( { colors, width }){
+    const myName =  width > 700 ? 'Mariano L. Acosta ' : 'Mariano Acosta ' ;
     const firstTitle = 'Software Developer ';
     const secondTitle = 'Electronics Engineer ';
     
-    let colors = props.colorPalette;
     let nameStyle = {
         color: colors.text01
     }
@@ -20,7 +19,7 @@ function Name(props){
 
     let delay1 = 1000;
     let delay2 = 1500 + delay1;
-    let delay3= delay2 + 1500;
+    let delay3 = delay2 + 1500;
 
     return(
         <div className='Name' >   
