@@ -13,55 +13,34 @@ export default class Menu extends Component{
 
     constructor(props){
         super(props);
-        let {content:items, 
-             name:currentElement, 
-             title, 
-             description} = this.props.content[0];
-        this.state = {
-            elements: this.props.content.map((value)=>{return value.name}),
-            items,
-            currentElement,
-            title,
-            description
-        }
+        let {content:items,name:current,title,description} = this.props.content[0];
+        let elements = this.props.content.map((value)=>{return value.name})
+        this.state = {elements, items, current, title, description}
         this.handleSelect = this.handleSelect.bind(this);
     }
 
     componentWillReceiveProps(nextProps) {
-        let {content:items, 
-             name:currentElement, 
-             title, 
-             description } = nextProps.content[0];
-        this.state = {
-            elements: nextProps.content.map((value)=>{return value.name}),
-            items,
-            currentElement,
-            title,
-            description
-        }
+        let {content:items, name:current,title,description } = nextProps.content[0];
+        let elements = nextProps.content.map((value)=>{return value.name})
+        this.state = {elements, items, current, title, description}
     }
-
+    
     handleSelect(name){
         return ()=>{
             let index = this.props.content.findIndex((value)=>{return name === value.name});
             let {content:items, title, description} =  this.props.content[index];
-            this.setState({
-                elements: this.props.content.map((value)=>{return value.name}),
-                currentElement:name,
-                items,
-                title,
-                description
-            });
+            let elements = this.props.content.map((value)=>{return value.name});
+            this.setState({elements,current:name,items,title,description});
         }
     }
 
     render(){
-        let { items, title, description, currentElement ,elements} = this.state;
+        let {items, title, description, current ,elements} = this.state;
         let itemProps = {items, title, description}
 
         return(
             <div id ='menu-container' style = {style}>
-                <List elements={elements} onClick={this.handleSelect} current={currentElement}/>
+                <List {...{elements,current}} onClick={this.handleSelect}/>
                 <ItemList {...itemProps}/>
             </div>
         );
