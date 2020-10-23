@@ -6,13 +6,6 @@ import './Visor.css';
 import 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
 
-const picStyle = {
-    display:'none',
-    height:'120px',
-    position: 'absolute',
-    right: 20,
-    top: -20
-}
 
 const buttonStyle = {
     position:'absolute',
@@ -23,17 +16,13 @@ const buttonStyle = {
     bottom:80,
 }
 
-function Visor(props) {
+function Visor({colors, visor}) {
 
-    const titleStyle = {
-        color: props.colors.text01
-    }
+    const titleStyle = {color: colors.text01}
 
-    const descStyle = {
-        color: props.colors.text02
-    }
+    const descStyle = {color: colors.text02}
 
-    let { title, description, menu } = props.visor;
+    let { title, description, menu } = visor;
 
     let hasMenu = menu.isValid;
     let renderP = <p id='visor-desc' style={descStyle}>{description}</p>
@@ -41,12 +30,9 @@ function Visor(props) {
 
     return(
         <div className="Visor">
-            <div className="pic-container">
-                <ProfilePic style={picStyle} />
-            </div>
             <h2 id='visor-title' style={titleStyle}>{title}</h2>
             {render}
-            <Button01 colors={props.colors} msg='Generate CV'style={buttonStyle}/>
+            <Button01 {...{colors}} msg='Generate CV'style={buttonStyle}/>
         </div>
     );
 

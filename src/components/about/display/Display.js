@@ -34,9 +34,9 @@ class Display extends React.Component{
             color: colors.text02
         }
 
-        let { selectors, currentBox, visor } = this.state;
-        let selector = { colors, selectors, currentBox };
-        let visorProp = {colors, visor, currentBox};
+        let {selectors, currentBox, visor} = this.state;
+        let selector = {colors, selectors, currentBox};
+        let visorProp = {colors, visor};
 
         return(
             <div className="display" {...{style}}>
