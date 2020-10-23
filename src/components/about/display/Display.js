@@ -3,8 +3,7 @@ import './Display.css';
 import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
-import ProfilePic from '../../profilePic/profilePic';
-import selectors from '../display/selector/selectors'
+import selectors from '../display/selector/selectors';
 
 class Display extends React.Component{
 
@@ -49,10 +48,9 @@ class Display extends React.Component{
                           onHover = {this.handleHover}
                           selectors = {selectors}
                           currentBox = {currentBox}/>
-                <Visor 
-                    colors = {colors}
-                    visor = {visor}
-                    currentBox = {currentBox}/>
+                <Visor colors = {colors}
+                       visor = {visor}
+                       currentBox = {currentBox}/>
             </div>
         )
     }
