@@ -3,7 +3,7 @@ import './Box.css'
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 
-function Box ({ colors, select, highlight, onHover}){
+function Box ({colors, select, highlight, onHover}){
 
     let border = colors.border;
     let icon = select.icon;
@@ -27,19 +27,15 @@ function Box ({ colors, select, highlight, onHover}){
 
     return(
         <div className="Box" style = {boxStyle} onMouseOver = {onHover(title, visor)}>
-
             <div className="icon">{icon}</div>
-
             <div className="box-container">
                 <p id='box-title' style={titleStyle}>
                     <Typist cursor={{hideWhenDone: true}}>{title}</Typist>
                 </p>
                 <p id='box-description' style={descStyle}>{description}</p>
             </div>
-
         </div>
     )
-
 }
 
 export default Box;

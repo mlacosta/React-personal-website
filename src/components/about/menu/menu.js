@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import List from './list/List';
 import ItemList from './ItemList/ItemList';
 import './menu.css'
@@ -9,13 +9,14 @@ let style = {
     marginTop:50
 }
 
+export default class Menu extends Component{
 
-class Menu extends React.Component{
     constructor(props){
         super(props);
-
-        let { content:items, name:currentElement, title, description } = this.props.content[0];
-
+        let {content:items, 
+             name:currentElement, 
+             title, 
+             description} = this.props.content[0];
         this.state = {
             elements: this.props.content.map((value)=>{return value.name}),
             items,
@@ -27,14 +28,15 @@ class Menu extends React.Component{
     }
 
     componentWillReceiveProps(nextProps) {
-        
-        let { content:items, name:currentElement, title, description } = nextProps.content[0];
-
+        let {content:items, 
+             name:currentElement, 
+             title, 
+             description } = nextProps.content[0];
         this.state = {
             elements: nextProps.content.map((value)=>{return value.name}),
             items,
             currentElement,
-            title ,
+            title,
             description
         }
     }
@@ -43,7 +45,6 @@ class Menu extends React.Component{
         return ()=>{
             let index  = this.props.content.findIndex((value)=>{return name === value.name});
             let {content:items, title, description} =  this.props.content[index];
-
             this.setState({
                 elements: this.props.content.map((value)=>{return value.name}),
                 currentElement:name,
@@ -52,11 +53,9 @@ class Menu extends React.Component{
                 description
             });
         }
-
     }
 
     render(){
-
         let { items, title, description, currentElement ,elements} = this.state;
         let itemProps = {items, title, description}
 
@@ -69,5 +68,3 @@ class Menu extends React.Component{
         );
     }
 }
-
-export default Menu;
