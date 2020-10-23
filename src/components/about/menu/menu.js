@@ -20,7 +20,7 @@ export default class Menu extends Component{
     }
 
     componentWillReceiveProps(nextProps) {
-        let {content:items, name:current,title,description } = nextProps.content[0];
+        let {content:items, name:current,title,description} = nextProps.content[0];
         let elements = nextProps.content.map((value)=>{return value.name})
         this.state = {elements, items, current, title, description}
     }
