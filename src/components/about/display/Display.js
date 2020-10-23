@@ -9,7 +9,7 @@ class Display extends React.Component{
 
     constructor(props){
         super(props);
-        
+
         let {title, description, menu} = selectors[0].visor;
 
         this.state = {
@@ -22,13 +22,8 @@ class Display extends React.Component{
         this.handleHover = this.handleHover.bind(this);
     }
 
-    handleHover(boxTitle, visor){
-        return ()=>{
-            this.setState({
-                currentBox: boxTitle,
-                visor }
-            )
-        }
+    handleHover(currentBox, visor){
+        return ()=>{this.setState({currentBox, visor})}
     }
 
     render(){
@@ -44,7 +39,7 @@ class Display extends React.Component{
         let visorProp = {colors, visor, currentBox};
 
         return(
-            <div className="display" style = {style}>
+            <div className="display" {...{style}}>
                 <Selector onHover = {this.handleHover} {...selector}/>
                 <Visor {...visorProp}/>
             </div>

@@ -13,10 +13,9 @@ function Selector ({ colors , onHover , selectors, currentBox } ) {
         <div className="Selector" style={styles}>
             {selectors.map(
                 select =>{
-                    return(<Box colors = {colors}
-                                select = {select}
-                                highlight = {(select.title === currentBox) ? true : false}
-                                onHover = {onHover}/>)
+                    let highlight = (select.title === currentBox) ? true : false; 
+                    let prop = {colors,onHover,select, highlight};
+                    return(<Box {...prop}/>)
                 })
             }
         </div>
