@@ -1,6 +1,4 @@
 import React from 'react';
-import ProfilePic from '../../../profilePic/profilePic';
-import '../../../profilePic/profilePic';
 import Button01 from '../../../misc/button01/Button01';
 import './Visor.css';
 import 'react-typist/dist/Typist.css';

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import MainBox from './components/landing/mainBox/mainBox';
+import MainBox from './components/mainBox/mainBox';
 import Particles from 'react-particles-js';
 import themes from './themes/themes';
 import AtomBar from './components/animated/atom';
