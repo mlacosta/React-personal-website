@@ -15,14 +15,19 @@ function MainBox ({ colors, contact, width, height}){
         color: color.text02
     };
 
+    let debug = {width, height, colors, name: colors.name};
+    let name = {colors, width};
+    let prop = {links:contact, colors, width};
+    let version = {colors, link:'https://github.com/mlacosta/mlacosta.github.io'}
+
     return(
         <div className="landing">
             <div className='MainBox' style={style}>
                 <span id='cursor'>{'>'}</span>
-                <DebugWindow width = {width} height = {height} colors = {colors} name = {colors.name}/>     
-                <Name colors = {colors} width = {width}/>
-                <Contact links={contact} colors = {colors} width = {width}></Contact>
-                <Version colors = {colors} link={'https://github.com/mlacosta/mlacosta.github.io'}/>
+                <DebugWindow {...debug}/>     
+                <Name {...name}/>
+                <Contact {...prop}/>
+                <Version {...version}/>
             </div>
         </div>
     );
