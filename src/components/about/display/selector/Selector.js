@@ -5,9 +5,7 @@ import Box from './box/Box';
 
 function Selector ({ colors , onHover , selectors, currentBox } ) {
 
-    let styles = {
-        borderColor: colors.border
-    }
+    let styles = {borderColor: colors.border}
 
     return(
         <div className="Selector" style={styles}>
