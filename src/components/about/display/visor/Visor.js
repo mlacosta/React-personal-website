@@ -16,10 +16,9 @@ const buttonStyle = {
     bottom:80,
 }
 
-function Visor({colors, visor}) {
+export default function Visor({colors, visor}) {
 
     const titleStyle = {color: colors.text01}
-
     const descStyle = {color: colors.text02}
 
     let { title, description, menu } = visor;
@@ -38,4 +37,3 @@ function Visor({colors, visor}) {
 
 }
 
-export default Visor;
