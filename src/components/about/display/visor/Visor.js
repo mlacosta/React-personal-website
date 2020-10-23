@@ -6,7 +6,6 @@ import './Visor.css';
 import 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
 
-
 const buttonStyle = {
     position:'absolute',
     display:'flex',
@@ -22,7 +21,6 @@ export default function Visor({colors, visor}) {
     const descStyle = {color: colors.text02}
 
     let { title, description, menu } = visor;
-
     let hasMenu = menu.isValid;
     let renderP = <p id='visor-desc' style={descStyle}>{description}</p>
     let render = hasMenu ? < Menu content = {menu.content}/> : renderP;
