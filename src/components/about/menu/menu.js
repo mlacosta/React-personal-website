@@ -43,7 +43,7 @@ export default class Menu extends Component{
 
     handleSelect(name){
         return ()=>{
-            let index  = this.props.content.findIndex((value)=>{return name === value.name});
+            let index = this.props.content.findIndex((value)=>{return name === value.name});
             let {content:items, title, description} =  this.props.content[index];
             this.setState({
                 elements: this.props.content.map((value)=>{return value.name}),
