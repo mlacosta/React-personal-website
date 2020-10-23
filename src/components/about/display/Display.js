@@ -12,65 +12,47 @@ class Display extends React.Component{
 
         super(props);
 
+        let {title, description, menu} = selectors[0].visor;
+
         this.state = {
             selectors:selectors,
             currentBox: selectors[0].title,
-            visor:{
-                title: selectors[0].visor.title,
-                description:selectors[0].visor.description,
-                menu:selectors[0].visor.menu
-            },
+            visor:{title, description, menu},
             boxes: selectors.map((value)=>{return value.title}),
-            
         }
 
         this.handleHover = this.handleHover.bind(this);
     }
 
-    handleHover( boxTitle, title, description , menu){
+    handleHover(boxTitle, visor){
         return ()=>{
             this.setState({
                 currentBox: boxTitle,
-                visor:{
-                    title,
-                    description,
-                    menu
-                }
-            })
+                visor }
+            )
         }
     }
 
-    
     render(){
-
         let { colors } = this.props;
 
         let style = {
             border: `1px solid ${colors.border}`,
             color: colors.text02
-        };
-
-        const picStyle = {
-            height:'90px',
-            position: 'absolute',
-            margin:'10px 0 0 30px',
-            display:'none'
         }
+
+        let { selectors, currentBox, visor } = this.state;
 
         return(
             <div className="display" style = {style}>
-                <ProfilePic style={picStyle} layerColor = {colors.background}/> 
-                <Selector colors={colors} 
-                          onHover={this.handleHover}
-                          selectors={this.state.selectors}
-                          currentBox={this.state.currentBox}/>
+                <Selector colors = {colors} 
+                          onHover = {this.handleHover}
+                          selectors = {selectors}
+                          currentBox = {currentBox}/>
                 <Visor 
-                    colors={colors}
-                    title = {this.state.visor.title}
-                    description = {this.state.visor.description}
-                    menu = {this.state.visor.menu}
-                    currentBox={this.state.currentBox}
-                />
+                    colors = {colors}
+                    visor = {visor}
+                    currentBox = {currentBox}/>
             </div>
         )
     }

@@ -3,69 +3,53 @@ import ProfilePic from '../../../profilePic/profilePic';
 import '../../../profilePic/profilePic';
 import Button01 from '../../../misc/button01/Button01';
 import './Visor.css';
-import Display from '../Display';
-import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
 
-import ReactDOM from 'react-dom';
+const picStyle = {
+    display:'none',
+    height:'120px',
+    position: 'absolute',
+    right: 20,
+    top: -20
+}
 
-class Visor extends React.Component{
+const buttonStyle = {
+    position:'absolute',
+    display:'flex',
+    justifyContent:'center',
+    backgroundColor:'#eee',
+    marginTop:70,
+    bottom:80,
+}
 
-    constructor(props){
-        super(props);
+function Visor(props) {
+
+    const titleStyle = {
+        color: props.colors.text01
     }
 
-    render(){
+    const descStyle = {
+        color: props.colors.text02
+    }
 
-        const picStyle = {
-            display:'none',
-            height:'120px',
-            position: 'absolute',
-            right: 20,
-            top: -20
-        }
+    let { title, description, menu } = props.visor;
 
-        const buttonStyle = {
-            position:'absolute',
-            display:'flex',
-            justifyContent:'center',
-            backgroundColor:'#eee',
-            marginTop:70,
-            bottom:80,
-        }
+    let hasMenu = menu.isValid;
+    let renderP = <p id='visor-desc' style={descStyle}>{description}</p>
+    let render = hasMenu ? < Menu content = {menu.content}/> : renderP;
 
-        const titleStyle = {
-            color: this.props.colors.text01
-        }
-
-        const descStyle = {
-            color: this.props.colors.text02
-        }
-
-        let hasMenu = this.props.menu.isValid;
-        let renderP = <p id='visor-desc' style={descStyle}>{this.props.description}</p>
-        let render = hasMenu ? < Menu content = {this.props.menu.content}/> : renderP;
-
-        if(hasMenu){
-            
-        }
-        
-
-        return(
-            <div className="Visor">
-                <div className="pic-container">
-                    <ProfilePic style={picStyle} />
-                </div>
-                <h2 id='visor-title' style={titleStyle}>{this.props.title}</h2>
-                {render}
-                <Button01 colors={this.props.colors} 
-                          msg='Generate CV'
-                          style={buttonStyle}/>
+    return(
+        <div className="Visor">
+            <div className="pic-container">
+                <ProfilePic style={picStyle} />
             </div>
-        );
+            <h2 id='visor-title' style={titleStyle}>{title}</h2>
+            {render}
+            <Button01 colors={props.colors} msg='Generate CV'style={buttonStyle}/>
+        </div>
+    );
 
-    }
 }
 
 export default Visor;

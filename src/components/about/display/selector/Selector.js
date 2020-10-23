@@ -14,10 +14,7 @@ function Selector ({ colors , onHover , selectors, currentBox } ) {
             {selectors.map(
                 select =>{
                     return(<Box colors = {colors}
-                                title = {select.title}
-                                description = {select.description}
-                                icon = {select.icon}
-                                visor  = {select.visor}
+                                select = {select}
                                 highlight = {(select.title === currentBox) ? true : false}
                                 onHover = {onHover}/>)
                 })
