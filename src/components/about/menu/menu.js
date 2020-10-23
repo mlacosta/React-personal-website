@@ -64,7 +64,6 @@ export default class Menu extends Component{
                 <List elements={elements} onClick={this.handleSelect} current={currentElement}/>
                 <ItemList {...itemProps}/>
             </div>
-
         );
     }
 }
