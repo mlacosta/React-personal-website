@@ -16,7 +16,7 @@ class App extends React.Component {
 
   constructor(props){
     super(props);
-    let index = Math.floor(Math.random() * Math.floor(5));
+    let index = Math.floor(Math.random() * Math.floor(3));
     //index = 5; //debug purposes
     this.state = {width: window.innerWidth, height: window.innerHeight, colors:themes[index]};
     this.handleResize = this.handleResize.bind(this);
@@ -24,7 +24,7 @@ class App extends React.Component {
 
   handleResize(){
     this.setState({width: window.innerWidth, height: window.innerHeight });
-    let index = Math.floor(Math.random() * Math.floor(5));
+    let index = Math.floor(Math.random() * Math.floor(3));
     //index = 5; //debug purposes
     this.setState({colors:themes[index]});
   }

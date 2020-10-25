@@ -31,7 +31,7 @@ let theme03 = {
   name: 'substrate'
 }
 
-let theme04 = {
+/*let theme04 = {
   text01:'#f2e9e4',
   text02: '#9a8c98',
   text03: '#f2e9e4',
@@ -40,7 +40,7 @@ let theme04 = {
   border: '#9a8c98',
   white: '#ffff',
   name: 'indo silver club'
-}
+}*/
 
 /*let theme05 = {
   text01:'#2c0735',
@@ -100,6 +100,6 @@ let theme09 = {
 
 
 
-let themes = [theme01, theme03,theme04,theme06,theme09];
+let themes = [theme01, theme03,theme06];
 
 export default themes;

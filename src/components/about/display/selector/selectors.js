@@ -1,8 +1,9 @@
 import React from 'react';
-
 import tools from './info/tools';
 import work from './info/work';
 import education from './info/education';
+import { papers, awards } from './info/papers-awards';
+import Itemizer from '../../../misc/Itemizer/Itemizer';
 
 function age(dob) { 
     const birth =  new Date(dob);
@@ -10,7 +11,8 @@ function age(dob) {
     let age_dt = new Date(diff_ms); 
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
-        
+
+
 const selectors  = [
     {   
         title:'About Me',
@@ -87,10 +89,7 @@ const selectors  = [
         icon: <i class="fas fa-award"></i>,
         visor:{
             title: 'Ipsum commodo tempor ea consectetur aliquip',
-            description:`Do exercitation qui cillum irure ex qui. Anim pariatur.
-                        Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.
-                        Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.
-                        Eiusmod nostrud Lorem tempor exercitation ex aliquip non non veniam aliquip non tempor pariatur non.` ,
+            description:<><h3>Papers:</h3><Itemizer items={papers}/><h3>Awards:</h3><Itemizer items={awards}/></>,
             menu:{
                 isValid: false,
                 content: undefined
@@ -103,9 +102,7 @@ const selectors  = [
         icon: <i class="fas fa-gamepad"></i>,
         visor:{
             title: 'Non sint ex ea ad',
-            description:'Do exercitation qui cillum irure ex qui. Anim pariatur.'+ 
-                        'Commodo est tempor irure anim cillum ipsum consequat esse id deserunt qui excepteur.'+
-                        ' Ipsum officia est occaecat veniam consequat laboris non ut nisi dolore Lorem Lorem fugiat adipisicing.',
+            description:``,
             menu:{
                 isValid: false,
                 content: undefined
