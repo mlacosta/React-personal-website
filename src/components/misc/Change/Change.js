@@ -17,7 +17,8 @@ export default function Change({icon, msg, onClick, colors}){
 		right:20,
 		fontSize:'.6rem',
 		paddingLeft:20,
-		fontWeight:700
+		fontWeight:700,
+		color: colors.text02
 	}
 
 	const bulb = {
@@ -27,6 +28,6 @@ export default function Change({icon, msg, onClick, colors}){
 		fontSize:'1.2rem'
 	}
 	return(
-		<div className='change' {...{style}}><FaRegLightbulb style = {bulb}/>{msg}</div>
+		<div className='change' {...{style}} {...{onClick}}><FaRegLightbulb style = {bulb}/>{msg}</div>
 	)
 }

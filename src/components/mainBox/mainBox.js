@@ -3,7 +3,7 @@ import Name from './name/name';
 import Contact from './contact/contact';
 import Version from './version/version';
 import DebugWindow from '../debug-window/debug-window';
-import Change from '../misc/Change/Change';
+
 
 import './mainBox.css'
 
@@ -19,7 +19,7 @@ function MainBox ({ colors, contact, width, height}){
     let name = {colors, width};
     let prop = {links:contact, colors, width};
     let version = {colors, link:'https://github.com/mlacosta/mlacosta.github.io'}
-    let changeProp = {colors,msg:'Change Theme'}
+    
 
     return(
         <div className="landing">
@@ -29,7 +29,7 @@ function MainBox ({ colors, contact, width, height}){
                 <Name {...name}/>
                 <Contact {...prop}/>
                 <Version {...version}/>
-                <Change {...changeProp}/>
+                
             </div>
         </div>
     );
