@@ -113,3 +113,19 @@ const selectors  = [
 ]
 
 export default selectors;
+
+/*
+twitch
+music production, electronics music and retro music
+enjoy reading about diversed topics (list) good reads
+keep learning with moocs
+keep working in personal projects & ideas
+games, audio plugins, emulators,
+
+retro gaming, I practice Speedruns time to time
+
+
+I mantain a Twitch account where I usually do stream about software development and casual gaming,
+
+ produced Electronic Music since I was 14. I enjoy remixing populars song and 
+*/

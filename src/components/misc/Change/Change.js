@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaRegLightbulb } from 'react-icons/fa';
+import { BsLightning } from 'react-icons/bs';
+import Button01 from '../button01/Button01';
 
 export default function Change({icon, msg, onClick, colors}){
 	
@@ -10,7 +11,7 @@ export default function Change({icon, msg, onClick, colors}){
 		height: 30,
 		width: 80,
 		border: `1px solid ${colors.border}`,
-		borderRadius:10,
+		borderRadius:7,
 		cursor:'pointer',
 		position:'fixed',
 		top: 15,
@@ -18,7 +19,8 @@ export default function Change({icon, msg, onClick, colors}){
 		fontSize:'.6rem',
 		paddingLeft:20,
 		fontWeight:700,
-		color: colors.text02
+		color: colors.text02,
+		backgroundColor:'transparent',
 	}
 
 	const bulb = {
@@ -27,7 +29,8 @@ export default function Change({icon, msg, onClick, colors}){
 		left: 5,
 		fontSize:'1.2rem'
 	}
+	
 	return(
-		<div className='change' {...{style}} {...{onClick}}><FaRegLightbulb style = {bulb}/>{msg}</div>
+		<button className='change' {...{style}} {...{onClick}}>< BsLightning style = {bulb}/>{msg}</button>
 	)
 }

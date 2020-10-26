@@ -29,7 +29,6 @@ function MainBox ({ colors, contact, width, height}){
                 <Name {...name}/>
                 <Contact {...prop}/>
                 <Version {...version}/>
-                
             </div>
         </div>
     );
