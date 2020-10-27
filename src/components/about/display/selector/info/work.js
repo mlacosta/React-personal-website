@@ -1,6 +1,6 @@
 const work = [
     {name: 'Coderhouse',
-    title: 'React JS Teacher',
+    title: 'React JS Tutor',
     description:'August 2020 - Present',
     content: ['Taught and Assisted students with web development concepts',
               'Help the students build an e-commerce app from scratch',
