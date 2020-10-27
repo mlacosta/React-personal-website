@@ -4,7 +4,7 @@ import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
-
+import ProfilePic from '../../misc/profilePic/profilePic';
 
 class Display extends React.Component{
 
@@ -38,8 +38,16 @@ class Display extends React.Component{
         let selector = {colors, selectors, currentBox};
         let visorProp = {colors, visor};
 
+        let picSTyle = {
+            position:'absolute',
+            top:80,
+            right:85,
+            height:90,
+            filter:'sepia(50)'
+        }
         return(
             <div className="display" {...{style}}>
+                <ProfilePic style={picSTyle}/>
                 <Selector onHover = {this.handleHover} {...selector}/>
                 <Visor {...visorProp}/>
             </div>

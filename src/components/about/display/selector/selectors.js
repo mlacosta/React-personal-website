@@ -62,7 +62,7 @@ const selectors  = [
         description:'', //'[Shoulders] : [Giant]',
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
-            title: 'Aliqua occaecat est cillum.',
+            title: 'Aliqua occaecat est cillum',
             description:undefined,
             menu:{
                 isValid: true,
@@ -88,7 +88,7 @@ const selectors  = [
         description:'', //[Work Harder] : [Make it Better]',
         icon: <i class="fas fa-award"></i>,
         visor:{
-            title: 'Ipsum commodo tempor ea consectetur aliquip',
+            title: 'Ipsum commodo tempor ea consectetur',
             description:<><h3>Papers:</h3><Itemizer items={papers}/><h3>Awards:</h3><Itemizer items={awards}/></>,
             menu:{
                 isValid: false,
