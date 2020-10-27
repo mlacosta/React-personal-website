@@ -49,11 +49,12 @@ const selectors  = [
         description:'', //'[Id Est] : [Polyglot]',
         icon: <i class="fas fa-laptop-code"></i>,
         visor:{
-            title: 'Select one field:',
+            title: 'Proficient in Technology:',
             description: undefined,
             menu:{
                 isValid: true,
-                content: tools
+                content: tools,
+                subtitle: false
             }
         }
     },
@@ -62,7 +63,7 @@ const selectors  = [
         description:'', //'[Shoulders] : [Giant]',
         icon: <i class="fas fa-graduation-cap"></i>,
         visor:{
-            title: 'Aliqua occaecat est cillum',
+            title: 'Graduated from College, Life-long learner',
             description:undefined,
             menu:{
                 isValid: true,
@@ -89,7 +90,7 @@ const selectors  = [
         icon: <i class="fas fa-award"></i>,
         visor:{
             title: 'Ipsum commodo tempor ea consectetur',
-            description:<><h3>Papers:</h3><Itemizer items={papers}/><h3>Awards:</h3><Itemizer items={awards}/></>,
+            description:<><h3 style={{marginTop:-20}}>Papers:</h3><Itemizer items={papers}/><h3>Awards:</h3><Itemizer items={awards}/></>,
             menu:{
                 isValid: false,
                 content: undefined
@@ -101,16 +102,23 @@ const selectors  = [
         description:'' ,//'[Soul Body] : [Ecstasy]',
         icon: <i class="fas fa-gamepad"></i>,
         visor:{
-            title: 'Non sint ex ea ad',
-            description:`Ex incididunt proident adipisicing magna consectetur Lorem id ipsum nostrud. Do duis id ut labore ipsum reprehenderit 
-                          nulla reprehenderit ea elit commodo. Dolor eu minim Lorem ea nulla. Cupidatat laboris cillum est commodo cillum est 
-                          id do ut ad reprehenderit. Magna eu est veniam veniam nisi tempor deserunt amet consectetur tempor elit. Irure ipsum 
-                          aliqua voluptate voluptate esse Lorem fugiat labore ex. Lorem quis et sunt ullamco pariatur adipisicing reprehenderit 
-                          dolor exercitation.
-                          Ipsum enim amet do elit ullamco ut nisi sunt aliqua Lorem. Duis eu dolore ex reprehenderit. Ullamco adipisicing laborum 
-                          qui cillum Lorem tempor magna eiusmod ullamco laboris consequat.
-                          
-                          `,
+            title: 'Speerunning, Electronic Music & Books',
+            description:
+                        <>
+                            <p style={{marginBottom:20}}>I do streams about programming and video game speedrunning on my 
+                                                            <a style={{cursor:'pointer'}} href='https://www.twitch.tv/mariandevs' target ='blank'> Twitch Account</a>.</p>
+                            <p style={{marginBottom:20}}> Electronic music has been my passion all my life and I've produced 
+                                                          music since I was 14. Furthermore, I studied piano and classical music in 
+                                                          a local conservatory for two years.
+                            </p>
+                            <p style={{marginBottom:20}}> Also, I enjoy reading physical books, especially challenging ones. My main interests include anthropology,
+                                biographies, biology, economics, mathematics, neuroscience, psychology, philosophy and sociology. 
+                                My favorite genres are science fiction, thriller and Mystery. Currently, I'm half-way through <strong>'Human Action' </strong>
+                                by <strong>Ludwig Von Mises</strong> and I'm planning to read next <strong>'Gödel Escher Bach' </strong> 
+                                by <strong>Douglas Hofstadter</strong>. You can check my Goodreads account <a style={{cursor:'pointer'}} href='https://www.goodreads.com/mlacosta' target ='blank'>here</a>.
+                            </p>
+                        </>,
+
             menu:{
                 isValid: false,
                 content: undefined
@@ -123,6 +131,7 @@ const selectors  = [
 export default selectors;
 
 /*
+intj
 twitch
 music production, electronics music and retro music
 enjoy reading about diversed topics (list) good reads

@@ -7,7 +7,6 @@ import AtomBar from './components/animated/atom';
 import Display from './components/about/display/Display';
 import PageContainer from './components/misc/pageContainer/PageContainer';
 import Change from './components/misc/Change/Change';
-import Watermark from './components/misc/Watermark/Watermark';
 import links from './links';
 
 /*   MAIN APP      */ 
@@ -58,7 +57,6 @@ class App extends React.Component {
           <MainBox {...this.state} contact = {links}/> 
           <AtomBar/>
           <Display colors = {this.state.colors}/>
-         {/*<Watermark colors = {this.state.colors}/>*/} 
         </PageContainer>
       </div>
     );

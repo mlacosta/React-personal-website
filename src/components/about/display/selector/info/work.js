@@ -5,7 +5,7 @@ const work = [
     content: ['Taught and Assisted students with web development concepts',
               'Help the students build an e-commerce app from scratch',
               'React.js Development',
-            'HTML, CSS, Javascript, Node, CLI, NPM, GIT version control, project management',
+            'HTML, CSS, Javascript, Node, CLI, NPM, GIT version control, firebase, project management',
             ,
             ]
     },
