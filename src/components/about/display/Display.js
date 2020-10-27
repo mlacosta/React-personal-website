@@ -47,7 +47,7 @@ class Display extends React.Component{
         }
         return(
             <div className="display" {...{style}}>
-                <ProfilePic style={picSTyle}/>
+                {/* <ProfilePic style={picSTyle}/> */}
                 <Selector onHover = {this.handleHover} {...selector}/>
                 <Visor {...visorProp}/>
             </div>

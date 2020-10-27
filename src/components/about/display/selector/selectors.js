@@ -102,7 +102,15 @@ const selectors  = [
         icon: <i class="fas fa-gamepad"></i>,
         visor:{
             title: 'Non sint ex ea ad',
-            description:``,
+            description:`Ex incididunt proident adipisicing magna consectetur Lorem id ipsum nostrud. Do duis id ut labore ipsum reprehenderit 
+                          nulla reprehenderit ea elit commodo. Dolor eu minim Lorem ea nulla. Cupidatat laboris cillum est commodo cillum est 
+                          id do ut ad reprehenderit. Magna eu est veniam veniam nisi tempor deserunt amet consectetur tempor elit. Irure ipsum 
+                          aliqua voluptate voluptate esse Lorem fugiat labore ex. Lorem quis et sunt ullamco pariatur adipisicing reprehenderit 
+                          dolor exercitation.
+                          Ipsum enim amet do elit ullamco ut nisi sunt aliqua Lorem. Duis eu dolore ex reprehenderit. Ullamco adipisicing laborum 
+                          qui cillum Lorem tempor magna eiusmod ullamco laboris consequat.
+                          
+                          `,
             menu:{
                 isValid: false,
                 content: undefined

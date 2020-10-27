@@ -6,6 +6,7 @@ import DebugWindow from '../debug-window/debug-window';
 
 
 import './mainBox.css'
+import ProfilePic from '../misc/profilePic/profilePic';
 
 function MainBox ({ colors, contact, width, height}){
         
@@ -20,7 +21,6 @@ function MainBox ({ colors, contact, width, height}){
     let prop = {links:contact, colors, width};
     let version = {colors, link:'https://github.com/mlacosta/mlacosta.github.io'}
     
-
     return(
         <div className="landing">
             <div className='MainBox' {...{style}}>

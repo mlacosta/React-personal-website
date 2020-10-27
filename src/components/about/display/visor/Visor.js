@@ -11,7 +11,7 @@ const buttonStyle = {
     justifyContent:'center',
     backgroundColor:'#eee',
     marginTop:70,
-    bottom:80,
+    bottom:100,
 }
 
 export default function Visor({colors, visor}) {
