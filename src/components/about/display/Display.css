@@ -12,3 +12,11 @@
     font-weight: 700;
     color: currentColor;
 }
+
+@media only screen and (max-width: 758px) {
+    .display{
+        height: 100%;
+        overflow: scroll;
+    }
+    
+}

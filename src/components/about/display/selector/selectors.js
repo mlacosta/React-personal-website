@@ -89,7 +89,7 @@ const selectors  = [
         description:'', //[Work Harder] : [Make it Better]',
         icon: <i class="fas fa-award"></i>,
         visor:{
-            title: 'Ipsum commodo tempor ea consectetur',
+            title: 'Academic Work & Recognition',
             description:<><h3 style={{marginTop:-20}}>Papers:</h3><Itemizer items={papers}/><h3>Awards:</h3><Itemizer items={awards}/></>,
             menu:{
                 isValid: false,

@@ -25,3 +25,14 @@
     margin-left: -21px;
     margin-right: 10px;
 } 
+
+@media only screen and (max-width: 1354px) {
+    .itemlist-container{
+        line-height: 1.2rem;
+    }
+
+    #list-menu{
+        font-size: .75rem;
+    }
+
+}

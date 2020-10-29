@@ -4,12 +4,23 @@
     left: 0;
     height: 60%;
     flex-direction: column;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 140px;
     margin-right: 40px;
     margin-left: 60px ;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 1354px) {
+    .Selector{
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .Selector{
+        display:none;
+    }
 }

@@ -30,3 +30,42 @@
     font-size: .8rem;
     margin:10px 0
 }
+
+@media only screen and (max-width: 1354px) {
+    .Visor .itemizer li{
+        font-size: .75rem;
+        margin:10px 0
+    }
+
+    .Visor{
+        font-size: .75rem;
+        width: 45%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .Visor .itemizer li{
+        font-size: .75rem;
+        margin:10px 0
+    }
+
+    .Visor{
+        margin:0;
+        position: absolute;
+        left: 15%;
+        width: 70%;
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 753px) {
+
+    .Visor{
+        margin:0;
+        position: absolute;
+        left: 15%;
+        width: 70%;
+    }
+}

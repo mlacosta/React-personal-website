@@ -60,3 +60,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
+@media only screen and (max-width: 1354px) {
+    #box-title{
+        font-size: 1rem;
+    }
+}

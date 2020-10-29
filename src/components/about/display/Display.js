@@ -28,7 +28,7 @@ class Display extends React.Component{
     }
 
     render(){
-        let { colors } = this.props;
+        let { colors , width} = this.props;
         let style = {
             border: `1px solid ${colors.border}`,
             color: colors.text02
@@ -36,7 +36,7 @@ class Display extends React.Component{
 
         let {selectors, currentBox, visor} = this.state;
         let selector = {colors, selectors, currentBox};
-        let visorProp = {colors, visor};
+        let visorProp = {colors, visor, width};
 
         let picSTyle = {
             position:'absolute',

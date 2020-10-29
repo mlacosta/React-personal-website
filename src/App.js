@@ -53,10 +53,10 @@ class App extends React.Component {
           style = {{position:'fixed'}}
           params = {particleStyle}/>
         <PageContainer>
-          <Change colors = {this.state.colors} {...changeProp}/>
+          {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
           <MainBox {...this.state} contact = {links}/> 
           <AtomBar/>
-          <Display colors = {this.state.colors}/>
+          <Display colors = {this.state.colors} width = {this.state.width}/>
         </PageContainer>
       </div>
     );
