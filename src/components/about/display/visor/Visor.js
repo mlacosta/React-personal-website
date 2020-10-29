@@ -28,14 +28,6 @@ export default function Visor({colors, visor, width}) {
             left:-450
         }
     }else if(width < 753){
-        buttonStyle = {position:'absolute',
-        display:'flex',
-        justifyContent:'center',
-        backgroundColor:'#eee',
-        marginTop:70,
-        bottom:20,
-        left:180
-    }
 
     }else{
         buttonStyle = {position:'absolute',

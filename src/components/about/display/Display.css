@@ -15,8 +15,14 @@
 
 @media only screen and (max-width: 758px) {
     .display{
-        height: 100%;
-        overflow: scroll;
+        min-height: 100vh;
+    }
+    
+}
+
+@media only screen and (max-width: 412px) {
+    .display{
+        height: 890px;
     }
     
 }
