@@ -1,0 +1,24 @@
+.list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 40px;
+    height: 350px;
+    border-width:  0 0 0 1px;
+    border-style: solid;
+    padding: 10px 10px 10px 0;
+    width: 200px;
+}
+
+.list-element{
+    cursor: pointer;
+    height: 100%;
+    padding: 10% 0;
+    padding-left:10px ;
+}
+
+.list-element:hover{
+    background-color: rgba(0,0,0,.2);
+    color:white;
+}
+

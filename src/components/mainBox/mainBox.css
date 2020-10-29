@@ -1,3 +1,7 @@
+.landing{
+    height: 100vh;
+}
+
 .MainBox{
     position: relative;
     padding: 20px;
@@ -5,6 +9,7 @@
     width: 80%;
     max-width: 1300px;
     height: 700px;
+    background-color: rgba(0,0,0,0.1);
 }
 
 #cursor{

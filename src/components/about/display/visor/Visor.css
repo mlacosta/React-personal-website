@@ -1,0 +1,83 @@
+.Visor{
+    display: flexbox;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: 90%;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 50px;
+    padding-right: 30px;
+    line-height: 1.6rem;
+}
+
+.Visor h2{
+    margin: 60px 0 50px 0;
+}
+
+.Visor p{
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.pic-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Visor .itemizer li{
+    font-size: .8rem;
+    margin:10px 0
+}
+
+@media only screen and (max-width: 1354px) {
+    .Visor .itemizer li{
+        font-size: .75rem;
+        margin:10px 0
+    }
+
+    .Visor{
+        font-size: .75rem;
+        width: 45%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .Visor .itemizer li{
+        font-size: .75rem;
+        margin:10px 0
+    }
+
+    .Visor{
+        margin:0;
+        position: absolute;
+        left: 15%;
+        width: 70%;
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 753px) {
+
+    .Visor{
+        margin:0;
+        position: absolute;
+        left: 15%;
+        width: 70%;
+    }
+
+    #visor-title{
+        margin:30px 0;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+
+    .Visor{
+        height: auto;
+    }
+
+}

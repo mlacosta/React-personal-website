@@ -5,4 +5,24 @@
     width: 80%;
     max-width: 1300px;
     height: 700px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.display a{
+    font-weight: 700;
+    color: currentColor;
+}
+
+@media only screen and (max-width: 758px) {
+    .display{
+        min-height: 100vh;
+    }
+    
+}
+
+@media only screen and (max-width: 412px) {
+    .display{
+        height: 890px;
+    }
+    
 }
