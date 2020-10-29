@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8a0e2ca168b74f49b7e1e70e89c2e34",
+    "revision": "f68b63ea67e3301921e85a4269b39267",
     "url": "/index.html"
   },
   {
-    "revision": "016fb25c2feb4013b098",
+    "revision": "fd8fb6bdb9cd4cf6b01c",
     "url": "/static/css/2.dbd8b1e0.chunk.css"
   },
   {
-    "revision": "443b3f6b54919d1497e8",
-    "url": "/static/css/main.65dbd417.chunk.css"
+    "revision": "4e193a0106a5d2c51eb5",
+    "url": "/static/css/main.c1e05cbb.chunk.css"
   },
   {
-    "revision": "016fb25c2feb4013b098",
-    "url": "/static/js/2.aa1de5de.chunk.js"
+    "revision": "fd8fb6bdb9cd4cf6b01c",
+    "url": "/static/js/2.f4cbb343.chunk.js"
   },
   {
     "revision": "c97fb91e7dd1c7b19ae67fb152a2e6b2",
-    "url": "/static/js/2.aa1de5de.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f4cbb343.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "443b3f6b54919d1497e8",
-    "url": "/static/js/main.012a02ec.chunk.js"
+    "revision": "4e193a0106a5d2c51eb5",
+    "url": "/static/js/main.7dc9c31e.chunk.js"
   },
   {
     "revision": "bd9c841bdd01c1296ab8",
     "url": "/static/js/runtime-main.fc5f478f.js"
+  },
+  {
+    "revision": "622c6cf16e3396b354a1d7e9167b3968",
+    "url": "/static/media/CV_Mariano_L_Acosta.622c6cf1.pdf"
   },
   {
     "revision": "f2103d04e38fd4f5b096c7b008e62896",
