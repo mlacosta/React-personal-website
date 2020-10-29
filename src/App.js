@@ -15,7 +15,8 @@ class App extends React.Component {
 
   constructor(props){
     super(props);
-    let index = Math.floor(Math.random() * Math.floor(3));
+    const len = themes.length;
+    let index = Math.floor(Math.random() * Math.floor(len));
     //index = 5; //debug purposes
     this.state = {width: window.innerWidth, height: window.innerHeight, colors:themes[index],theme:index};
     this.handleChangeTheme = this.handleChangeTheme.bind(this);
