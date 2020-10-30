@@ -37,7 +37,7 @@ const education = [
     {name: 'DeepLearning.io',
     content: ['Tensorflow','Convolutional Neural Network','Artificial Neural Network','Backpropagation','Hyperparameter Optimization','Machine Learning','Inductive Transfer','Multi-Task Learning','Facial Recognition System'],
     title: 'Deep Learning Specialization',
-    description:'June 2020 - November 20',
+    description:'January 2019 - March 2019',
     }
 ]
 
