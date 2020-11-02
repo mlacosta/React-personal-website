@@ -98,6 +98,17 @@ let theme09 = {
   name: 'no end'
 }
 
+let theme10 = {
+  text01:'#c81e17',
+  text02: '#98b141',
+  text03: '#3ec3ab',
+  background: '#1d1606',
+  boxBackground: '#d6c040',
+  border: '#d6c040', 
+  white: '#ffff',
+  name: 'tie fighter'
+}
+
 
 
 let themes = [theme01, theme03,theme06,theme02 ];
