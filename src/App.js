@@ -61,10 +61,10 @@ class App extends React.Component {
               <Route exact path='/'>
                 <MainBox {...this.state} contact = {links}/> 
               </Route>
-              <Route exact path='/about'>
+              <Route path='/about'>
                 <Display colors = {this.state.colors} width = {this.state.width}/>
               </Route>
-              <Route exact path='/portfolio'>
+              <Route path='/portfolio'>
                 <Portfolio />
               </Route>
             </Switch>
