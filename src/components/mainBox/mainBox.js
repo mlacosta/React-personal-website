@@ -27,7 +27,10 @@ function MainBox ({ colors, contact, width, height}){
         window.location.href = `${href}about`;
     };
 
-    useEffect(()=>{window.addEventListener('keydown', handlePressed);},[])
+    useEffect(()=>{
+                    window.addEventListener('keydown', handlePressed);
+                    return ()=>{window.removeEventListener('keydown', handlePressed);}
+                },[])
     
     return(
         <div className="landing">

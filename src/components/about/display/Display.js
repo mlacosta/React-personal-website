@@ -4,7 +4,7 @@ import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
-import ProfilePic from '../../misc/profilePic/profilePic';
+
 
 class Display extends React.Component{
 
