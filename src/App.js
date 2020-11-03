@@ -62,9 +62,7 @@ class App extends React.Component {
               </Route>
               <Route path='/about'>
                 <Display colors = {this.state.colors} width = {this.state.width}/>
-              </Route>
-              <Route path='/portfolio'>
-                <Portfolio />
+                <Portfolio colors = {this.state.colors} />
               </Route>
             </Switch>
           </HashRouter>

@@ -15,8 +15,10 @@
     "react-particles-js": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-sprite-animator": "^2.0.1",
     "react-typist": "^2.0.5",
-    "social-media-icons-react": "^1.1.2"
+    "social-media-icons-react": "^1.1.2",
+    "svg-invader-gen": "^1.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",

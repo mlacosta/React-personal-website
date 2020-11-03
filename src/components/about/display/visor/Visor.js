@@ -1,7 +1,7 @@
 import React from 'react';
 import Button01 from '../../../misc/button01/Button01';
 import './Visor.css';
-import 'react-typist/dist/Typist.css';
+import Typist from 'react-typist/dist/Typist.css';
 import Menu from '../../menu/menu';
 import CV from '../../../../documents/CV_Mariano_L_Acosta.pdf';
 

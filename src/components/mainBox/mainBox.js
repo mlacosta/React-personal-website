@@ -3,11 +3,9 @@ import Name from './name/name';
 import Contact from './contact/contact';
 import Version from './version/version';
 import DebugWindow from '../debug-window/debug-window';
-import { navigate } from "@reach/router"
 
 
 import './mainBox.css'
-import ProfilePic from '../misc/profilePic/profilePic';
 
 function MainBox ({ colors, contact, width, height}){
         
