@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useEffect, useState}  from 'react'; 
 import Name from './name/name';
 import Contact from './contact/contact';
 import Version from './version/version';
 import DebugWindow from '../debug-window/debug-window';
+import { navigate } from "@reach/router"
 
 
 import './mainBox.css'
@@ -20,6 +21,13 @@ function MainBox ({ colors, contact, width, height}){
     let name = {colors, width};
     let prop = {links:contact, colors, width};
     let version = {colors, link:'https://github.com/mlacosta/mlacosta.github.io'}
+
+    const handlePressed = () => {
+        const { href } = window.location;
+        window.location.href = `${href}about`;
+    };
+
+    useEffect(()=>{window.addEventListener('keydown', handlePressed);},[])
     
     return(
         <div className="landing">

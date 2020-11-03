@@ -4,6 +4,7 @@
   "version": "2.1.1",
   "private": true,
   "dependencies": {
+    "@reach/router": "^1.3.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,6 +13,7 @@
     "react-glitch-effect": "^2.0.2",
     "react-icons": "^3.11.0",
     "react-particles-js": "^3.3.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-typist": "^2.0.5",
     "social-media-icons-react": "^1.1.2"

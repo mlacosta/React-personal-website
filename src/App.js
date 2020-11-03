@@ -8,6 +8,8 @@ import Display from './components/about/display/Display';
 import PageContainer from './components/misc/pageContainer/PageContainer';
 import Change from './components/misc/Change/Change';
 import links from './links';
+import Portfolio from './components/Portfolio/Portfolio';
+import {Switch, Route, BrowserRouter } from 'react-router-dom';
 
 /*   MAIN APP      */ 
             
@@ -17,7 +19,7 @@ class App extends React.Component {
     super(props);
     const len = themes.length;
     let index = Math.floor(Math.random() * Math.floor(len));
-    //index = 5; //debug purposes
+    index = 2;
     this.state = {width: window.innerWidth, height: window.innerHeight, colors:themes[index],theme:index};
     this.handleChangeTheme = this.handleChangeTheme.bind(this);
     this.handleResize = this.handleResize.bind(this);
@@ -33,7 +35,6 @@ class App extends React.Component {
 
   handleResize(){
     this.setState({width: window.innerWidth, height: window.innerHeight });
-
   }
 
   render(){
@@ -55,10 +56,22 @@ class App extends React.Component {
           params = {particleStyle}/>
         <PageContainer>
           {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
-          <MainBox {...this.state} contact = {links}/> 
+          <BrowserRouter>
+            <Switch>
+              <Route exact path='/'>
+                <MainBox {...this.state} contact = {links}/> 
+              </Route>
+              <Route exact path='/about'>
+                <Display colors = {this.state.colors} width = {this.state.width}/>
+              </Route>
+              <Route exact path='/portfolio'>
+                <Portfolio />
+              </Route>
+            </Switch>
+          </BrowserRouter>
           <AtomBar/>
-          <Display colors = {this.state.colors} width = {this.state.width}/>
         </PageContainer>
+
       </div>
     );
   }
