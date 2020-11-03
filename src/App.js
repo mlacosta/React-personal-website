@@ -19,7 +19,6 @@ class App extends React.Component {
     super(props);
     const len = themes.length;
     let index = Math.floor(Math.random() * Math.floor(len));
-    index = 0;
     this.state = {width: window.innerWidth, height: window.innerHeight, colors:themes[index],theme:index};
     this.handleChangeTheme = this.handleChangeTheme.bind(this);
     this.handleResize = this.handleResize.bind(this);
