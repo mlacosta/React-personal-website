@@ -9,6 +9,7 @@ import PageContainer from './components/misc/pageContainer/PageContainer';
 import Change from './components/misc/Change/Change';
 import links from './links';
 import Portfolio from './components/Portfolio/Portfolio';
+import NavBar from './components/misc/NavBar/NavBar';
 import {Switch, Route, HashRouter } from 'react-router-dom';
 
 /*   MAIN APP      */ 
@@ -56,13 +57,16 @@ class App extends React.Component {
         <PageContainer>
           {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
           <HashRouter>
+            <NavBar colors = {this.state.colors} />
             <Switch>
               <Route exact path='/'>
                 <MainBox {...this.state} contact = {links}/> 
               </Route>
               <Route path='/about'>
                 <Display colors = {this.state.colors} width = {this.state.width}/>
-                <Portfolio colors = {this.state.colors} />
+              </Route>
+              <Route path='/portfolio'>
+              <Portfolio colors = {this.state.colors} />
               </Route>
             </Switch>
           </HashRouter>

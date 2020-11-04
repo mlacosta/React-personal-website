@@ -4,7 +4,8 @@ import './visor/Visor';
 import Visor from './visor/Visor';
 import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
-
+import Version from '../../mainBox/version/version';
+import Debug from '../../debug-window/debug-window';
 
 class Display extends React.Component{
 
@@ -45,9 +46,17 @@ class Display extends React.Component{
             height:90,
             filter:'sepia(50)'
         }
+
+        const debug ={
+            position:'fixed',
+            left:20,
+            color:colors.text03
+        }
+        
         return(
             <div className="display" {...{style}}>
-                {/* <ProfilePic style={picSTyle}/> */}
+                <Version colors = {colors} style = {{left:0, position:'fixed'}}/>
+                <Debug style = {debug}/>
                 <Selector onHover = {this.handleHover} {...selector}/>
                 <Visor {...visorProp}/>
             </div>

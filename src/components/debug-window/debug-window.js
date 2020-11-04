@@ -3,10 +3,10 @@ import './debug-window.css';
 import useMousePosition from '../misc/UseMousePosition/UseMousePosition';
 
 
-function DebugWindow ( { width, height, name} ){
+function DebugWindow ( { width, height, name, style= {}} ){
     const { x, y } = useMousePosition();
     return(
-        <div className="DebugWindow">
+        <div className="DebugWindow" style = {style}>
             <span id='debug-title'>Debug mode</span><br/>
             width: {width} <br/>
             height: {height} <br/>

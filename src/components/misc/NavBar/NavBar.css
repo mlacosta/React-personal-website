@@ -1,0 +1,11 @@
+.navLink{
+    color: red;
+}
+
+.navLink:hover {
+    color:white;
+}
+
+.navLink .active::before{
+    content: '>';
+}
