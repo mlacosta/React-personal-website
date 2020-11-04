@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project.css';
-
+import {AiFillStar} from 'react-icons/ai'
 
 export default function Project( {value, colors, num }){
 
@@ -11,7 +11,8 @@ export default function Project( {value, colors, num }){
 
 	let style = {
 		flexDirection: ( num % 2 ) ? 'row': 'row-reverse',
-		borderColor: colors.border
+		borderColor: colors.border,
+		backgroundColor: colors.boxColor,
 	}
 	return( 	
 		<div className="project" style={style}>
@@ -22,6 +23,7 @@ export default function Project( {value, colors, num }){
 					<div className="project-tools">Tools: {tools}</div>
 					<a class="fab fa-github" src={github} target='_blank'></a>
 					<a class="fas fa-code-branch" target='_blank'></a>
+					<span><AiFillStar style={{position:'relative', top:3,left:0}}/>   Featured</span>
 				</div>
 				
 			</div>

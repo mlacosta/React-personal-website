@@ -3,7 +3,8 @@ let theme01 = {
     text02: '#7fa1ce',
     text03: '#4d6e9b',
     background: '#050409',
-    boxBackground: '#060608',
+    boxBackground: '#000',
+    boxColor:'rgba(0,0,0,.3)',
     border: '#27556c',
     white: '#ffff',
     name: 'ozone'
@@ -15,6 +16,7 @@ let theme02 = {
     text03: '#4d6e9b',
     background: '#000',
     boxBackground: '#060608',
+    boxColor:'#060608',
     border: '#2aff00',
     white: '#ffff',
     name: 'u.f.o'
@@ -26,6 +28,7 @@ let theme03 = {
   text03: '#40916c',
   background: '#081c15',
   boxBackground: '#1b4332',
+  boxColor:'rgba(0,0,0,.3)',
   border: '#d8f3dc',
   white: '#ffff',
   name: 'substrate'
@@ -60,6 +63,7 @@ let theme06 = {
   text03: '#faa307',
   background: '#1f1407',
   boxBackground: '#370617',
+  boxColor:'rgba(0,0,0,.3)',
   border: '#e59023',
   white: '#ffff',
   name: 'cathode'

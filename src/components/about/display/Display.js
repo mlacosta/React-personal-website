@@ -6,6 +6,7 @@ import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
 import Version from '../../mainBox/version/version';
 import Debug from '../../debug-window/debug-window';
+import NavBar from '../../misc/NavBar/NavBar';
 
 class Display extends React.Component{
 
@@ -31,7 +32,7 @@ class Display extends React.Component{
     render(){
         let { colors , width} = this.props;
         let style = {
-            border: `1px solid ${colors.border}`,
+            /*border: `1px solid ${colors.border}`,*/
             color: colors.text02
         }
 
@@ -55,6 +56,7 @@ class Display extends React.Component{
         
         return(
             <div className="display" {...{style}}>
+                <NavBar colors = {colors} />
                 <Version colors = {colors} style = {{left:0, position:'fixed'}}/>
                 <Debug style = {debug}/>
                 <Selector onHover = {this.handleHover} {...selector}/>

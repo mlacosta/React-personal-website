@@ -25,6 +25,7 @@ export default function NavBar({ colors }){
 				<NavLink className ='navLink'to='/about' style = {navStyle}>About</NavLink>
 				<NavLink className ='navLink'to='/portfolio' style = {navStyle}>Projects</NavLink>
 				<NavLink className ='navLink'to='/contact' style = {navStyle}>Contact Me!</NavLink>
+				<NavLink className ='navLink'to='/music' style = {navStyle}>Music</NavLink>
 				<NavLink className ='navLink'to='/blog' style = {navStyle}>Blog</NavLink>
 			</ul>)
 }
