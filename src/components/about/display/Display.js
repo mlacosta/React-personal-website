@@ -32,8 +32,10 @@ class Display extends React.Component{
     render(){
         let { colors , width} = this.props;
         let style = {
-            /*border: `1px solid ${colors.border}`,*/
-            color: colors.text02
+            border: `1px solid ${colors.border}`,
+            color: colors.text02,
+            /*backgroundColor:'rgba(255,255,255,.015)',*/
+            borderRadius:10
         }
 
         let {selectors, currentBox, visor} = this.state;

@@ -17,6 +17,26 @@ const projects = [
      tools:'Javascript, HTML Canvas, CSS',
      photo: tetris
     },    
+    {name:'Marian NES (Coming Soon!)',
+    url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
+    github:'In esse Lorem labore ipsum excepteur',
+    description: `Aliquip aliqua qui do eu exercitation nulla ipsum excepteur consequat dolor culpa. 
+    Fugiat officia esse ipsum eu velit eu enim nisi ea. Cillum velit nulla aute dolore nisi aute ad proident duis est tempor. 
+    Consectetur consectetur veniam tempor exercitation ipsum do do labore commodo et voluptate nostrud. Sit culpa est ea nostrud elit. 
+    Fugiat enim consequat voluptate qui labore sit reprehenderit dolore enim.`,
+    tools:'React.js, Java, Client-Server, Hardware Emulation',
+    photo: nes
+    },
+    {name:'Delta Sigma Digital-to-Analog Converter',
+    url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
+    github:'In esse Lorem labore ipsum excepteur',
+    description: `Aliquip aliqua qui do eu exercitation nulla ipsum excepteur consequat dolor culpa. 
+    Fugiat officia esse ipsum eu velit eu enim nisi ea. Cillum velit nulla aute dolore nisi aute ad proident duis est tempor. 
+    Consectetur consectetur veniam tempor exercitation ipsum do do labore commodo et voluptate nostrud. Sit culpa est ea nostrud elit. 
+    Fugiat enim consequat voluptate qui labore sit reprehenderit dolore enim.`,
+    tools:'Arduino, Python, FreePie, Electronics',
+    photo: dac
+    },    
     {name:'Algorithmic Challenges',
     url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
     github:'In esse Lorem labore ipsum excepteur',
@@ -26,17 +46,7 @@ const projects = [
     Fugiat enim consequat voluptate qui labore sit reprehenderit dolore enim.`,
     tools:'Arduino, Python, FreePie, Electronics',
     photo: algo
-   },    
-   {name:'Marian NES (Coming Soon!)',
-   url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
-   github:'In esse Lorem labore ipsum excepteur',
-   description: `Aliquip aliqua qui do eu exercitation nulla ipsum excepteur consequat dolor culpa. 
-   Fugiat officia esse ipsum eu velit eu enim nisi ea. Cillum velit nulla aute dolore nisi aute ad proident duis est tempor. 
-   Consectetur consectetur veniam tempor exercitation ipsum do do labore commodo et voluptate nostrud. Sit culpa est ea nostrud elit. 
-   Fugiat enim consequat voluptate qui labore sit reprehenderit dolore enim.`,
-   tools:'React.js, Java, Client-Server, Hardware Emulation',
-   photo: nes
-  },
+   },
    {name:'N64 Controller (100% sensitivity)',
    url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
    github:'In esse Lorem labore ipsum excepteur',
@@ -47,16 +57,6 @@ const projects = [
    tools:'Arduino, Python, FreePie, Electronics',
    photo: n64
    },
-   {name:'Delta Sigma Digital-to-Analog Converter',
-   url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
-   github:'In esse Lorem labore ipsum excepteur',
-   description: `Aliquip aliqua qui do eu exercitation nulla ipsum excepteur consequat dolor culpa. 
-   Fugiat officia esse ipsum eu velit eu enim nisi ea. Cillum velit nulla aute dolore nisi aute ad proident duis est tempor. 
-   Consectetur consectetur veniam tempor exercitation ipsum do do labore commodo et voluptate nostrud. Sit culpa est ea nostrud elit. 
-   Fugiat enim consequat voluptate qui labore sit reprehenderit dolore enim.`,
-   tools:'Arduino, Python, FreePie, Electronics',
-   photo: dac
-  },
    {name:'MeLi Data Challenge 2019',
    url:'Pariatur irure ut mollit cupidatat incididunt est mollit.',
    github:'https://github.com/mlacosta/MeLi-Data-Challenge-2019-LSTM-CNN-Ensemble',
