@@ -58,9 +58,6 @@ class Display extends React.Component{
         
         return(
             <div className="display" {...{style}}>
-                <NavBar colors = {colors} />
-                <Version colors = {colors} style = {{left:0, position:'fixed'}}/>
-                <Debug style = {debug}/>
                 <Selector onHover = {this.handleHover} {...selector}/>
                 <Visor {...visorProp}/>
             </div>

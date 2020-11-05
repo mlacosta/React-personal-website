@@ -32,9 +32,6 @@ export default function Portfolio({colors}){
 
 	return(	
 		<>
-			<Version colors = {colors} style = {{left:0, position:'fixed'}}/>
-			<Debug style = {debug}/>
-			<NavBar colors = {colors} />
 			<h1 id='portfolio-title' style={title}>Projects</h1>
 			<div className="portfolio" style={portfolio}>
 				<div className="portfolio-upper" style={{padding:0}}>
