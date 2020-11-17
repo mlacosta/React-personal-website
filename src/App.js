@@ -38,14 +38,15 @@ class App extends React.Component {
   }
 
   render(){
+    
     const body = document.getElementsByTagName("BODY")[0];
     body.setAttribute("style", `background-color: ${this.state.colors.background}`);
     window.addEventListener('resize', this.handleResize);
     
     let isTheme = ((this.state.colors.name === 'no end') || (this.state.colors.name === 'indo silver club'));
     const particleStyle = isTheme && {particles:{color: {value: '#20a9b1'},"line_linked": {color:'#20a9b1'}}}; 
-
     let changeProp = {msg:'Change Theme',onClick:this.handleChangeTheme}
+    let sideBar = {name:this.state.colors.name, width:this.state.width, height:this.state.height}
 
     return (
       <div className="App" >
@@ -57,7 +58,7 @@ class App extends React.Component {
         <PageContainer>
           {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
           <HashRouter>
-            <SideBar colors = {this.state.colors}/>
+            <SideBar colors = {this.state.colors} info={sideBar}/>
             <Switch>
               <Route exact path='/'>
                 <MainBox {...this.state} contact = {links}/> 

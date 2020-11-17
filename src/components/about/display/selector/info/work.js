@@ -1,4 +1,11 @@
 const work = [
+    {name: 'Zondax',
+    title: 'Software Engineer',
+    description:'November 2020 - Present',
+    content: ['Development for Blockchain and Cryptography applications',
+              'Coded in C/C++ and Rust'
+            ]
+    },
     {name: 'Coderhouse',
     title: 'React JS Tutor',
     description:'August 2020 - Present',
