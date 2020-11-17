@@ -2,10 +2,12 @@ import React, {useEffect, useState}  from 'react';
 import Name from './name/name';
 import Contact from './contact/contact';
 import Version from './version/version';
-import Debug from '../debug-window/debug-window';
-import NavBar from '../misc/NavBar/NavBar';
+import DebugWindow from '../debug-window/debug-window';
+import { navigate } from "@reach/router"
+
 
 import './mainBox.css'
+import ProfilePic from '../misc/profilePic/profilePic';
 
 function MainBox ({ colors, contact, width, height}){
         
@@ -25,25 +27,19 @@ function MainBox ({ colors, contact, width, height}){
         window.location.href = `${href}about`;
     };
 
-    const debugS ={
-        position:'fixed',
-        left:20,
-        color:colors.text03
-    }
-
     useEffect(()=>{
                     window.addEventListener('keydown', handlePressed);
                     return ()=>{window.removeEventListener('keydown', handlePressed);}
                 },[])
     
-    
     return(
         <div className="landing">
             <div className='MainBox' {...{style}}>
                 <span id='cursor'>{'>'}</span>
-                <Version {...version}/>
+                <DebugWindow {...debug}/>     
                 <Name {...name}/>
                 <Contact {...prop}/>
+                <Version {...version}/>
             </div>
         </div>
     );

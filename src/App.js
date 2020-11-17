@@ -58,7 +58,7 @@ class App extends React.Component {
         <PageContainer>
           {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
           <HashRouter>
-            <SideBar colors = {this.state.colors} info={sideBar}/>
+            {/*<SideBar colors = {this.state.colors} info={sideBar}/>*/}
             <Switch>
               <Route exact path='/'>
                 <MainBox {...this.state} contact = {links}/> 
