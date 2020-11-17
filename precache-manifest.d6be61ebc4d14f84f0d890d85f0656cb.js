@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f0582901e3dbf454e8861422e081618",
+    "revision": "1404f994e5547b3b9e6fd46748d341dc",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.dbd8b1e0.chunk.css"
   },
   {
-    "revision": "b7d37ebef1f84b195517",
+    "revision": "89b858a1b9711a8288f4",
     "url": "/static/css/main.ba59b1ad.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.39f09e26.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7d37ebef1f84b195517",
-    "url": "/static/js/main.ecc03408.chunk.js"
+    "revision": "89b858a1b9711a8288f4",
+    "url": "/static/js/main.68077112.chunk.js"
   },
   {
     "revision": "bd9c841bdd01c1296ab8",
     "url": "/static/js/runtime-main.fc5f478f.js"
   },
   {
-    "revision": "622c6cf16e3396b354a1d7e9167b3968",
-    "url": "/static/media/CV_Mariano_L_Acosta.622c6cf1.pdf"
+    "revision": "15263c254d0a359215567a3b0d69e605",
+    "url": "/static/media/CV_Mariano_L_Acosta.15263c25.pdf"
   },
   {
     "revision": "bc7841749a6afa9ed836bd088ffa8f25",
