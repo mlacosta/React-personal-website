@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   handleChangeTheme(){
-    const len = themes.length;
+    const len = themes.length; //comentario
     let index = this.state.theme;
     let nuIndex = index === (len - 1) ? 0 : index + 1;
     this.setState({theme:nuIndex});
