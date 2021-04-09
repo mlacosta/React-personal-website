@@ -6,7 +6,7 @@ import Selector from './selector/Selector';
 import selectors from '../display/selector/selectors';
 import Version from '../../mainBox/version/version';
 import Debug from '../../debug-window/debug-window';
-import NavBar from '../../misc/NavBar/NavBar';
+
 
 class Display extends React.Component{
 

@@ -1,7 +1,20 @@
 const work = [
+    {name: 'Calyptia, Inc.',
+    title: 'Fullstack Engineer',
+    description:'December 2020 - Present',
+    content: ['Development in React and Javascript',
+              'Backend processing with Node',
+              'Implemented Login for users using auth0/oauth2',
+              'Implemented databases using Sequelize, MySQL and MongoDB',
+              'Data parsing, processing and visualization',
+              'UI and Metrics Dashboard design',
+              'Algorithms design and implementation'
+            ,
+            ]
+    },
     {name: 'Coderhouse',
     title: 'React JS Tutor',
-    description:'August 2020 - Present',
+    description:'August 2020 - March 2021',
     content: ['Taught and Assisted students with web development concepts',
               'Help the students build an e-commerce app from scratch',
               'React.js Development',

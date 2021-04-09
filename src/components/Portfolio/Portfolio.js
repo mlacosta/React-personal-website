@@ -5,7 +5,6 @@ import projects from './Work/info';
 import './Portfolio.css';
 import Version from '../mainBox/version/version';
 import Debug from '../debug-window/debug-window';
-import NavBar from '../misc/NavBar/NavBar';
 
 export default function Portfolio({colors}){
 
