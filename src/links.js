@@ -19,11 +19,6 @@ const links = [ { name:'Linkedin',
                   name: 'Soundcloud',
                   src: 'https://www.soundcloud.com/mlacosta64',
                   icon: <i class="fab fa-soundcloud"></i>
-                }
-                ,
-                { name:'Twitch',
-                  src: 'https://www.twitch.tv/mariandevs',
-                  icon: <i class="fab fa-twitch"></i>
                 },
                 { name:'Email',
                   src: 'mailto:marianoacosta.003@gmail.com',
