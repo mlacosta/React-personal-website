@@ -10,7 +10,7 @@ import Change from './components/misc/Change/Change';
 import links from './links';
 import Portfolio from './components/Portfolio/Portfolio';
 import SideBar from './components/misc/SideBar/SideBar';
-import {Switch, Route, HashRouter } from 'react-router-dom';
+import {Switch, Route, BrowserRouter } from 'react-router-dom';
 
 /*   MAIN APP      */ 
             
@@ -57,7 +57,7 @@ class App extends React.Component {
           params = {particleStyle}/>
         <PageContainer>
           {(this.state.width > 758) &&<Change colors = {this.state.colors} {...changeProp}/>}
-          <HashRouter>
+          <BrowserRouter>
             {/*<SideBar colors = {this.state.colors} info={sideBar}/>*/}
             <Switch>
               <Route exact path='/'>
@@ -70,7 +70,7 @@ class App extends React.Component {
               <Portfolio colors = {this.state.colors} />
               </Route>
             </Switch>
-          </HashRouter>
+          </BrowserRouter>
           <AtomBar/>
         </PageContainer>
 
