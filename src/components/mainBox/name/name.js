@@ -5,7 +5,7 @@ import "react-typist/dist/Typist.css";
 
 function Name({ colors, width }) {
   const myName = width > 700 ? "Mariano L. Acosta " : "Mariano Acosta ";
-  const firstTitle = "Full-stack Web Engineer ";
+  const firstTitle = "Software Developer";
   const secondTitle = "Electronics Engineer ";
 
   let nameStyle = {
